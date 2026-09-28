@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3500&pause=1200&color=848d97&center=true&vCenter=true&width=480&height=36&lines=2nd+year+CSE+%C2%B7+AI+%26+ML;building+SENTINEL+and+chaukas;Python+%C2%B7+TypeScript+%C2%B7+Java+%C2%B7+C%2B%2B;working+through+DSA+and+backend" alt="Typing: 2nd year CSE · AI & ML"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3500&pause=1200&color=848d97&center=true&vCenter=true&width=480&height=36&lines=2nd+year+CSE+%C2%B7+AI+%26+ML;building+SENTINEL+and+chaukas;Python+%C2%B7+TypeScript+%C2%B7+Java+%C2%B7+C%2B%2B;working+through+DSA+and+backend" alt="Typing"/>
 </div>
 
 <br/>
@@ -36,7 +36,11 @@ Right now I'm working on an AI agent security scanner, a fraud-prevention app I 
 
 <br/>
 
-**SENTINEL** &nbsp; · &nbsp; [`sentinel-ivory-two-76.vercel.app`](https://sentinel-ivory-two-76.vercel.app/) &nbsp; · &nbsp; [github](https://github.com/kambojmayan-png/SENTINEL) &nbsp; · &nbsp; [![PyPI](https://img.shields.io/badge/PyPI-sentinel--md-2f81f7?style=flat&logo=pypi&logoColor=white)](https://pypi.org/project/sentinel-md/)
+### SENTINEL &nbsp;·&nbsp; [live demo](https://sentinel-ivory-two-76.vercel.app/) &nbsp;·&nbsp; [repo](https://github.com/kambojmayan-png/SENTINEL) &nbsp;·&nbsp; [![PyPI](https://img.shields.io/badge/PyPI-sentinel--md-2f81f7?style=flat&logo=pypi&logoColor=white)](https://pypi.org/project/sentinel-md/)
+
+<img src="https://raw.githubusercontent.com/kambojmayan-png/SENTINEL/main/docs/img/banner-dark.svg" alt="SENTINEL — see what a file would make your AI coding agent do, before the agent reads it" width="100%"/>
+
+<br/>
 
 An offline security scanner for AI coding agent config files. AI agents like Claude Code, Cursor, and Gemini CLI treat repository files (`CLAUDE.md`, `AGENTS.md`, `.mcp.json`) as instructions — whoever edits those files controls what the agent does with your terminal and credentials. SENTINEL reads those files before the agent does and explains, in plain English, what each one would make the agent do.
 
@@ -46,21 +50,31 @@ Ships as a CLI, a VS Code extension, a GitHub Action, and a web app. Runs fully 
 
 [![tests](https://github.com/kambojmayan-png/SENTINEL/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/kambojmayan-png/SENTINEL/actions/workflows/tests.yml)
 
+<br/><br/>
+
+### chaukas / चौकस &nbsp;·&nbsp; [live app](https://chaukas.vercel.app) &nbsp;·&nbsp; [repo](https://github.com/kambojmayan-png/chaukas)
+
+<img src="https://raw.githubusercontent.com/kambojmayan-png/chaukas/main/docs/banner.png" alt="चौकस · Chaukas — a scam fire-drill your parents can actually use" width="100%"/>
+
 <br/>
 
-**chaukas / चौकस** &nbsp; · &nbsp; [`chaukas.vercel.app`](https://chaukas.vercel.app) &nbsp; · &nbsp; [github](https://github.com/kambojmayan-png/chaukas)
+A UPI fraud fire-drill app built at HACKDAY 1.0 in one day. Most UPI fraud victims aren't hacked — under fear and time pressure they send the money themselves. Chaukas simulates three real scam scenarios with Hindi voice guidance, designed for elders rather than developers.
 
-A UPI fraud fire-drill app built at HACKDAY 1.0 in one day. Most UPI fraud victims aren't hacked — under fear and time pressure they send the money themselves. Chaukas simulates three real scam scenarios with Hindi voice guidance, designed for elders rather than developers. It measures whether people who know the rule still fall for it under pressure (the knowledge-behaviour gap).
+<br/>
 
-Built, reviewed, and iterated four times during the build day. Playwright layout tests cover real devices at 320/360/412px.
+| Home | Message, read aloud | The PIN moment |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/kambojmayan-png/chaukas/main/docs/screens/01-home.png" width="220" alt="Chaukas home screen"/> | <img src="https://raw.githubusercontent.com/kambojmayan-png/chaukas/main/docs/screens/02-message.png" width="220" alt="Scammer message with choices"/> | <img src="https://raw.githubusercontent.com/kambojmayan-png/chaukas/main/docs/screens/03-pin.png" width="220" alt="PIN pad trap"/> |
+
+<br/>
 
 `Next.js 16` &nbsp; `TypeScript` &nbsp; `Playwright` &nbsp; `Vercel`
 
 [![tests](https://github.com/kambojmayan-png/chaukas/actions/workflows/test.yml/badge.svg)](https://github.com/kambojmayan-png/chaukas/actions/workflows/test.yml)
 
-<br/>
+<br/><br/>
 
-**AEGIS Global News** &nbsp; · &nbsp; [github](https://github.com/kambojmayan-png/AEGIS-GLOBAL-NEWS)
+### AEGIS Global News &nbsp;·&nbsp; [repo](https://github.com/kambojmayan-png/AEGIS-GLOBAL-NEWS)
 
 A news application built with Next.js and TypeScript, exploring server-side rendering and API integration.
 
@@ -125,25 +139,25 @@ A news application built with Next.js and TypeScript, exploring server-side rend
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api?username=kambojmayan-png&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&icon_color=2f81f7&text_color=848d97&ring_color=2f81f7"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=kambojmayan-png&show_icons=true&theme=default&hide_border=true"/>
-  <img src="https://github-readme-stats.vercel.app/api?username=kambojmayan-png&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&icon_color=2f81f7&text_color=848d97&ring_color=2f81f7" alt="GitHub stats" height="170"/>
-</picture>
+<img
+  src="https://github-readme-stats.vercel.app/api?username=kambojmayan-png&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&icon_color=2f81f7&text_color=848d97&ring_color=2f81f7"
+  alt="GitHub stats"
+  height="170"
+/>
 &nbsp;
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=kambojmayan-png&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&text_color=848d97&langs_count=6"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=kambojmayan-png&layout=compact&theme=default&hide_border=true&langs_count=6"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kambojmayan-png&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&text_color=848d97&langs_count=6" alt="Top languages" height="170"/>
-</picture>
+<img
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=kambojmayan-png&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&text_color=848d97&langs_count=6"
+  alt="Top languages"
+  height="170"
+/>
 
 <br/><br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-activity-graph.vercel.app/graph?username=kambojmayan-png&theme=github-compact&bg_color=0d1117&color=848d97&line=2f81f7&point=e6edf3&hide_border=true"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=kambojmayan-png&theme=minimal&hide_border=true"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kambojmayan-png&theme=github-compact&bg_color=0d1117&color=848d97&line=2f81f7&point=e6edf3&hide_border=true" alt="Contribution graph" width="100%"/>
-</picture>
+<img
+  src="https://github-readme-activity-graph.vercel.app/graph?username=kambojmayan-png&theme=github-compact&bg_color=0d1117&color=848d97&line=2f81f7&point=e6edf3&hide_border=true"
+  alt="Contribution graph"
+  width="100%"
+/>
 
 </div>
 
@@ -164,7 +178,7 @@ Working through LeetCode consistently in Java and C++. Topics so far: strings, h
 ## Terminal
 
 <div align="center">
-  <img src="assets/terminal.svg" alt="Terminal session: whoami → mayan kamboj, ls projects → SENTINEL chaukas AEGIS Leetcode, cat now.txt → studying 2nd year CSE AI ML, building SENTINEL and chaukas" width="100%"/>
+  <img src="assets/terminal.svg" alt="bash session: whoami mayan kamboj, ls projects SENTINEL chaukas AEGIS Leetcode, cat now.txt" width="100%"/>
 </div>
 
 <br/>
