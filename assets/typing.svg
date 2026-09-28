@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" width="800" height="60">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;display=swap');
+      .text { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 20px; fill: #58a6ff; }
+      .cursor { fill: #79c0ff; }
+    </style>
+    <!-- Phrase 1 -->
+    <text id="p1">CSE Student · AI &amp; ML Specialization</text>
+    <!-- Phrase 2 -->
+    <text id="p2">Building with Python · TypeScript · Java · C++</text>
+    <!-- Phrase 3 -->
+    <text id="p3">AI/ML · DSA · Security · Full-Stack</text>
+    <!-- Phrase 4 -->
+    <text id="p4">Learning · Building · Shipping · Improving</text>
+  </defs>
+
+  <!-- Background transparent -->
+  <rect width="800" height="60" fill="none"/>
+
+  <!-- Static centered text group with animation -->
+  <g transform="translate(400,38)" text-anchor="middle">
+    <!-- Phrase 1 -->
+    <text class="text" opacity="1">
+      <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;0;0;1;1" dur="16s" repeatCount="indefinite" begin="0s"/>
+      CSE Student · AI &amp; ML Specialization
+    </text>
+
+    <!-- Phrase 2 -->
+    <text class="text" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0;0;0;0" dur="16s" repeatCount="indefinite" begin="0s"/>
+      Building with Python · TypeScript · Java · C++
+    </text>
+
+    <!-- Phrase 3 -->
+    <text class="text" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0;0;0;0" dur="16s" repeatCount="indefinite" begin="0s"/>
+      AI/ML · DSA · Security · Full-Stack
+    </text>
+
+    <!-- Phrase 4 -->
+    <text class="text" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;1;0" dur="16s" repeatCount="indefinite" begin="0s"/>
+      Learning · Building · Shipping · Improving
+    </text>
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect x="0" y="44" width="2" height="18" class="cursor" rx="1">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="400,0;406,0;406,0;400,0" dur="16s" repeatCount="indefinite" calcMode="discrete"/>
+  </rect>
+</svg>
