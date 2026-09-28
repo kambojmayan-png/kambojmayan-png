@@ -1,122 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 300" width="740" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" width="720" height="260">
   <defs>
-    <style>
-      .mono { font-family: 'Courier New', Courier, monospace; }
-    </style>
-
-    <!-- Scanline pattern for CRT effect -->
-    <pattern id="scan" x="0" y="0" width="1" height="3" patternUnits="userSpaceOnUse">
-      <rect x="0" y="0" width="1" height="1" fill="black" opacity="0.04"/>
-    </pattern>
-
-    <!-- Subtle inner glow on window -->
-    <filter id="windowGlow" x="-2%" y="-2%" width="104%" height="104%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <!-- Gradient for the title bar -->
-    <linearGradient id="titleBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="titleBar" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#2d333b"/>
       <stop offset="100%" stop-color="#22272e"/>
     </linearGradient>
-
-    <!-- Gradient for window body -->
-    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#161b22"/>
-      <stop offset="100%" stop-color="#0d1117"/>
-    </linearGradient>
-
-    <!-- Glow for the border -->
-    <filter id="edgeGlow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
 
-  <!-- ── WINDOW FRAME ── -->
-  <!-- Outer glow ring -->
-  <rect x="2" y="2" width="736" height="296" rx="12" fill="none"
-    stroke="#58a6ff" stroke-width="1.5" filter="url(#edgeGlow)" opacity="0.25">
-    <animate attributeName="opacity" values="0.15;0.35;0.15" dur="4s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Window body -->
-  <rect width="740" height="300" rx="12" fill="url(#bodyGrad)"/>
+  <!-- Window frame -->
+  <rect width="720" height="260" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
 
   <!-- Title bar -->
-  <rect width="740" height="40" rx="12" fill="url(#titleBarGrad)"/>
-  <rect y="28" width="740" height="12" fill="url(#titleBarGrad)"/>
-
-  <!-- Separator line under title bar -->
-  <line x1="0" y1="40" x2="740" y2="40" stroke="#30363d" stroke-width="0.8"/>
+  <rect width="720" height="38" rx="10" fill="url(#titleBar)"/>
+  <rect y="28" width="720" height="10" fill="url(#titleBar)"/>
+  <line x1="0" y1="38" x2="720" y2="38" stroke="#30363d" stroke-width="0.8"/>
 
   <!-- Traffic lights -->
-  <circle cx="22" cy="20" r="6.5" fill="#ff5f57" opacity="0.95"/>
-  <circle cx="44" cy="20" r="6.5" fill="#febc2e" opacity="0.95"/>
-  <circle cx="66" cy="20" r="6.5" fill="#28c840" opacity="0.95"/>
+  <circle cx="20" cy="19" r="5.5" fill="#ff5f57"/>
+  <circle cx="40" cy="19" r="5.5" fill="#febc2e"/>
+  <circle cx="60" cy="19" r="5.5" fill="#28c840"/>
 
   <!-- Window title -->
-  <text x="370" y="25" class="mono" font-size="12" fill="#8b949e" text-anchor="middle">bash — ~/github-profile — 80×24</text>
+  <text x="360" y="24"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11.5" fill="#848d97" text-anchor="middle">bash — profile</text>
 
-  <!-- Scanline overlay -->
-  <rect y="40" width="740" height="260" fill="url(#scan)" rx="0"/>
+  <!-- ── Content ── -->
 
-  <!-- ── TERMINAL CONTENT ── -->
+  <!-- prompt + whoami -->
+  <text x="20" y="65" font-family="'Courier New', Courier, monospace" font-size="13" fill="#3fb950">$ </text>
+  <text x="38" y="65" font-family="'Courier New', Courier, monospace" font-size="13" fill="#cdd9e5">whoami</text>
 
-  <!-- Prompt line 1 -->
-  <text y="68" class="mono" font-size="13.5">
-    <tspan x="20" fill="#3fb950">┌──(</tspan><tspan fill="#e3b341">mayan</tspan><tspan fill="#3fb950">@</tspan><tspan fill="#79c0ff">github</tspan><tspan fill="#3fb950">)-[</tspan><tspan fill="#e3b341">~/profile</tspan><tspan fill="#3fb950">]</tspan>
+  <text x="20" y="84" font-family="'Courier New', Courier, monospace" font-size="13" fill="#848d97">mayan kamboj</text>
+
+  <!-- divider -->
+  <line x1="20" y1="97" x2="700" y2="97" stroke="#30363d" stroke-width="0.6"/>
+
+  <!-- prompt + ls -->
+  <text x="20" y="117" font-family="'Courier New', Courier, monospace" font-size="13" fill="#3fb950">$ </text>
+  <text x="38" y="117" font-family="'Courier New', Courier, monospace" font-size="13" fill="#cdd9e5">ls projects/</text>
+
+  <text x="20" y="136" font-family="'Courier New', Courier, monospace" font-size="13">
+    <tspan fill="#2f81f7">SENTINEL/</tspan>
+    <tspan fill="#848d97">  </tspan>
+    <tspan fill="#2f81f7">chaukas/</tspan>
+    <tspan fill="#848d97">  </tspan>
+    <tspan fill="#2f81f7">AEGIS/</tspan>
+    <tspan fill="#848d97">  </tspan>
+    <tspan fill="#2f81f7">Leetcode/</tspan>
   </text>
 
-  <!-- Command: whoami -->
-  <text y="90" class="mono" font-size="13.5">
-    <tspan x="20" fill="#3fb950">└─</tspan><tspan fill="#f78166">$ </tspan><tspan fill="#cdd9e5">whoami</tspan>
-    <!-- Cursor after command (appears briefly then disappears) -->
-    <tspan fill="#58a6ff" opacity="0">
-      <animate attributeName="opacity" values="1;0" dur="0.8s" fill="freeze" begin="0s"/>
-      █
-    </tspan>
-  </text>
+  <!-- divider -->
+  <line x1="20" y1="149" x2="700" y2="149" stroke="#30363d" stroke-width="0.6"/>
 
-  <!-- Output: name -->
-  <text x="32" y="112" class="mono" font-size="13.5" fill="#cdd9e5">Mayan Kamboj</text>
+  <!-- prompt + cat -->
+  <text x="20" y="169" font-family="'Courier New', Courier, monospace" font-size="13" fill="#3fb950">$ </text>
+  <text x="38" y="169" font-family="'Courier New', Courier, monospace" font-size="13" fill="#cdd9e5">cat now.txt</text>
 
-  <!-- Separator -->
-  <line x1="20" y1="126" x2="720" y2="126" stroke="#30363d" stroke-width="0.6"/>
+  <text x="20" y="189" font-family="'Courier New', Courier, monospace" font-size="13" fill="#848d97">studying:  2nd year B.E. CSE · AI &amp; ML</text>
+  <text x="20" y="208" font-family="'Courier New', Courier, monospace" font-size="13" fill="#848d97">building:  <tspan fill="#cdd9e5">SENTINEL</tspan> and <tspan fill="#cdd9e5">chaukas</tspan></text>
+  <text x="20" y="227" font-family="'Courier New', Courier, monospace" font-size="13" fill="#848d97">learning:  DSA · backend · agentic AI</text>
+  <text x="20" y="246" font-family="'Courier New', Courier, monospace" font-size="13" fill="#848d97">open to:   <tspan fill="#cdd9e5">collabs on AI/ML · security · civic tech</tspan></text>
 
-  <!-- Prompt line 2 -->
-  <text y="148" class="mono" font-size="13.5">
-    <tspan x="20" fill="#3fb950">┌──(</tspan><tspan fill="#e3b341">mayan</tspan><tspan fill="#3fb950">@</tspan><tspan fill="#79c0ff">github</tspan><tspan fill="#3fb950">)-[</tspan><tspan fill="#e3b341">~/profile</tspan><tspan fill="#3fb950">]</tspan>
-  </text>
-
-  <!-- Command: cat about.json -->
-  <text y="170" class="mono" font-size="13.5">
-    <tspan x="20" fill="#3fb950">└─</tspan><tspan fill="#f78166">$ </tspan><tspan fill="#cdd9e5">cat </tspan><tspan fill="#79c0ff">about.json</tspan>
-  </text>
-
-  <!-- JSON output -->
-  <text y="195" class="mono" font-size="13" fill="#8b949e">
-    <tspan x="20">{</tspan>
-  </text>
-  <text y="214" class="mono" font-size="13">
-    <tspan x="36" fill="#8b949e">"</tspan><tspan fill="#d2a8ff">role</tspan><tspan fill="#8b949e">":      "</tspan><tspan fill="#3fb950">CSE Student · AI &amp; ML</tspan><tspan fill="#8b949e">",</tspan>
-  </text>
-  <text y="233" class="mono" font-size="13">
-    <tspan x="36" fill="#8b949e">"</tspan><tspan fill="#d2a8ff">focus</tspan><tspan fill="#8b949e">":     "</tspan><tspan fill="#e3b341">AI/ML · DSA · Security · Backend</tspan><tspan fill="#8b949e">",</tspan>
-  </text>
-  <text y="252" class="mono" font-size="13">
-    <tspan x="36" fill="#8b949e">"</tspan><tspan fill="#d2a8ff">status</tspan><tspan fill="#8b949e">":    "</tspan><tspan fill="#58a6ff">Learning → Building → Improving</tspan><tspan fill="#8b949e">",</tspan>
-  </text>
-  <text y="271" class="mono" font-size="13">
-    <tspan x="36" fill="#8b949e">"</tspan><tspan fill="#d2a8ff">open_to</tspan><tspan fill="#8b949e">":   "</tspan><tspan fill="#79c0ff">Collabs on AI · Security · Civic Tech</tspan><tspan fill="#8b949e">"</tspan>
-  </text>
-  <text y="288" class="mono" font-size="13" fill="#8b949e">
-    <tspan x="20">}</tspan>
-  </text>
-
-  <!-- Blinking cursor on last line -->
-  <rect x="32" y="275" width="8" height="14" rx="1" fill="#3fb950">
+  <!-- Blinking cursor -->
+  <rect x="20" y="250" width="7" height="12" rx="1" fill="#3fb950">
     <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
   </rect>
 </svg>
