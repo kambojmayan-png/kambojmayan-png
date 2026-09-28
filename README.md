@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
   <img src="assets/hero.svg" alt="Mayan Kamboj — B.E. Computer Science, AI & ML" width="100%"/>
 </div>
 
@@ -140,13 +140,13 @@ A news application built with Next.js and TypeScript, exploring server-side rend
 <div align="center">
 
 <img
-  src="https://github-readme-stats.vercel.app/api?username=kambojmayan-png&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&icon_color=2f81f7&text_color=848d97&ring_color=2f81f7"
+  src="https://github-readme-stats-fast.vercel.app/api?username=kambojmayan-png&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&icon_color=2f81f7&text_color=848d97&ring_color=2f81f7"
   alt="GitHub stats"
   height="170"
 />
 &nbsp;
 <img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=kambojmayan-png&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&text_color=848d97&langs_count=6"
+  src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=kambojmayan-png&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&text_color=848d97&langs_count=6"
   alt="Top languages"
   height="170"
 />
@@ -154,7 +154,15 @@ A news application built with Next.js and TypeScript, exploring server-side rend
 <br/><br/>
 
 <img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=kambojmayan-png&theme=github-compact&bg_color=0d1117&color=848d97&line=2f81f7&point=e6edf3&hide_border=true"
+  src="https://streak-stats.demolab.com/?user=kambojmayan-png&theme=dark&hide_border=true&background=0d1117&ring=2f81f7&fire=2f81f7&currStreakNum=e6edf3&sideNums=848d97&currStreakLabel=848d97&sideLabels=848d97&dates=848d97"
+  alt="GitHub streak stats"
+  height="170"
+/>
+
+<br/><br/>
+
+<img
+  src="https://activity-graph.vercel.app/graph?username=kambojmayan-png&theme=github-compact&bg_color=0d1117&color=848d97&line=2f81f7&point=e6edf3&hide_border=true"
   alt="Contribution graph"
   width="100%"
 />
