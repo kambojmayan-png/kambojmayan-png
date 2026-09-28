@@ -1,23 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 40" width="720" height="40">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" width="800" height="60">
   <defs>
-    <style>
-      .label { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 13px; fill: #8b949e; letter-spacing: 6px; }
-    </style>
-    <!-- Moving gradient sweep for a subtle shimmer -->
-    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#30363d" stop-opacity="1"/>
-      <stop offset="40%"  stop-color="#58a6ff" stop-opacity="0.7"/>
-      <stop offset="60%"  stop-color="#bc8cff" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#30363d" stop-opacity="1"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 2 0; -1 0" dur="4s" repeatCount="indefinite"/>
+    <!-- Animated shimmer gradient that travels left to right -->
+    <linearGradient id="shimmer" x1="-100%" y1="0%" x2="0%" y2="0%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#0d1117"/>
+      <stop offset="30%"  stop-color="#58a6ff" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#bc8cff" stop-opacity="0.8"/>
+      <stop offset="70%"  stop-color="#58a6ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0;800 0;0 0" dur="5s" repeatCount="indefinite"/>
     </linearGradient>
+
+    <!-- Glow filter for the line -->
+    <filter id="lineGlow" x="-5%" y="-200%" width="110%" height="500%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
-  <rect width="720" height="40" fill="none"/>
+  <!-- Spacer -->
+  <rect width="800" height="60" fill="none"/>
 
-  <!-- Separator line -->
-  <line x1="0" y1="20" x2="720" y2="20" stroke="url(#shimmer)" stroke-width="1"/>
+  <!-- Separator line with travelling shimmer + glow -->
+  <line x1="0" y1="24" x2="800" y2="24" stroke="url(#shimmer)" stroke-width="1.2" filter="url(#lineGlow)"/>
 
-  <!-- Label -->
-  <text x="360" y="25" class="label" text-anchor="middle">LEARN · BUILD · BREAK · FIX · REPEAT</text>
+  <!-- Motto text -->
+  <text x="400" y="48"
+    font-family="'Courier New', Courier, monospace"
+    font-size="12" fill="#8b949e" text-anchor="middle" letter-spacing="7">
+    LEARN  ·  BUILD  ·  BREAK  ·  FIX  ·  REPEAT
+  </text>
 </svg>
