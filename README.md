@@ -162,8 +162,8 @@ A news application built with Next.js and TypeScript, exploring server-side rend
 <br/><br/>
 
 <img
-  src="https://activity-graph.vercel.app/graph?username=kambojmayan-png&theme=github-compact&bg_color=0d1117&color=848d97&line=2f81f7&point=e6edf3&hide_border=true"
-  alt="Contribution graph"
+  src="assets/contribution-graph.svg"
+  alt="GitHub Contribution Calendar"
   width="100%"
 />
 
