@@ -293,7 +293,7 @@
     <rect x="752" y="98" width="10" height="10" rx="2" fill="#0e4429" data-date="2026-09-10" data-level="1"/>
     <rect x="766" y="98" width="10" height="10" rx="2" fill="#161b22" data-date="2026-09-17" data-level="0"/>
     <rect x="780" y="98" width="10" height="10" rx="2" fill="#161b22" data-date="2026-09-24" data-level="0"/>
-    <rect x="794" y="98" width="10" height="10" rx="2" fill="#161b22" data-date="2026-10-01" data-level="0"/>
+    <rect x="794" y="98" width="10" height="10" rx="2" fill="#006d32" data-date="2026-10-01" data-level="2"/>
     <rect x="66" y="112" width="10" height="10" rx="2" fill="#161b22" data-date="2025-10-03" data-level="0"/>
     <rect x="80" y="112" width="10" height="10" rx="2" fill="#161b22" data-date="2025-10-10" data-level="0"/>
     <rect x="94" y="112" width="10" height="10" rx="2" fill="#161b22" data-date="2025-10-17" data-level="0"/>
@@ -346,6 +346,7 @@
     <rect x="752" y="112" width="10" height="10" rx="2" fill="#006d32" data-date="2026-09-11" data-level="2"/>
     <rect x="766" y="112" width="10" height="10" rx="2" fill="#0e4429" data-date="2026-09-18" data-level="1"/>
     <rect x="780" y="112" width="10" height="10" rx="2" fill="#0e4429" data-date="2026-09-25" data-level="1"/>
+    <rect x="794" y="112" width="10" height="10" rx="2" fill="#161b22" data-date="2026-10-02" data-level="0"/>
     <rect x="66" y="126" width="10" height="10" rx="2" fill="#161b22" data-date="2025-10-04" data-level="0"/>
     <rect x="80" y="126" width="10" height="10" rx="2" fill="#161b22" data-date="2025-10-11" data-level="0"/>
     <rect x="94" y="126" width="10" height="10" rx="2" fill="#161b22" data-date="2025-10-18" data-level="0"/>
