@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/hero.svg" alt="Mayan Kamboj — B.E. Computer Science, AI & ML" width="100%"/>
+  <img src="assets/hero.svg?v=2" alt="Mayan Kamboj — B.E. Computer Science, AI & ML" width="100%"/>
 </div>
 
 <div align="center">
@@ -37,7 +37,7 @@ I'm a **B.E. CSE AI/ML student** focused on AI agent security, defensive systems
 <br/>
 
 <div align="center">
-  <img src="assets/focus-bars.svg" alt="Core Competencies & Active Focus — Animated Progress Bars" width="100%"/>
+  <img src="assets/focus-bars.svg?v=2" alt="Core Competencies & Active Focus — Animated Progress Bars" width="100%"/>
 </div>
 
 <br/>
@@ -217,7 +217,7 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 ## Terminal
 
 <div align="center">
-  <img src="assets/terminal.svg" alt="Interactive Developer Terminal" width="100%"/>
+  <img src="assets/terminal.svg?v=2" alt="Interactive Developer Terminal" width="100%"/>
 </div>
 
 <br/>
@@ -227,7 +227,7 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 ## Connect with me
 
 <div align="center">
-  <img src="assets/connect.svg" alt="Connect with me — LinkedIn, LeetCode, Instagram, GitHub" width="100%"/>
+  <img src="assets/connect.svg?v=2" alt="Connect with me — LinkedIn, LeetCode, Instagram, GitHub" width="100%"/>
 </div>
 
 <br/>
@@ -251,5 +251,5 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 <br/>
 
 <div align="center">
-  <img src="assets/footer.svg" alt="Divider" width="100%"/>
+  <img src="assets/footer.svg?v=2" alt="Divider" width="100%"/>
 </div>
