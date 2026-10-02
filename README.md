@@ -229,18 +229,7 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 <div align="center">
   <img src="assets/connect-header.svg?v=1" alt="Connect · Networking" width="704"/>
   <br/>
-  <a href="https://www.linkedin.com/in/mayan-kamboj-296213382/" target="_blank">
-    <img src="assets/card-linkedin.svg?v=1" alt="LinkedIn — Mayan Kamboj" width="172"/>
-  </a>
-  <a href="https://leetcode.com/u/Mayan_Kamboj/" target="_blank">
-    <img src="assets/card-leetcode.svg?v=1" alt="LeetCode — Mayan_Kamboj" width="172"/>
-  </a>
-  <a href="https://instagram.com/mayan_kamboj" target="_blank">
-    <img src="assets/card-instagram.svg?v=1" alt="Instagram — @mayan_kamboj" width="172"/>
-  </a>
-  <a href="https://github.com/kambojmayan-png" target="_blank">
-    <img src="assets/card-github.svg?v=1" alt="GitHub — kambojmayan-png" width="172"/>
-  </a>
+  <a href="https://www.linkedin.com/in/mayan-kamboj-296213382/"><img src="assets/card-linkedin.svg?v=1" alt="LinkedIn — Mayan Kamboj" width="172"/></a>&nbsp;<a href="https://leetcode.com/u/Mayan_Kamboj/"><img src="assets/card-leetcode.svg?v=1" alt="LeetCode — Mayan_Kamboj" width="172"/></a>&nbsp;<a href="https://instagram.com/mayan_kamboj"><img src="assets/card-instagram.svg?v=1" alt="Instagram — @mayan_kamboj" width="172"/></a>&nbsp;<a href="https://github.com/kambojmayan-png"><img src="assets/card-github.svg?v=1" alt="GitHub — kambojmayan-png" width="172"/></a>
 </div>
 
 <br/>
