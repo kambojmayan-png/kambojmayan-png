@@ -2,8 +2,8 @@ name: Update Contribution Graph
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Every night at midnight UTC
-  workflow_dispatch:
+    - cron: '0 * * * *'   # Every hour
+  workflow_dispatch:        # Manual trigger
 
 jobs:
   update-graph:
@@ -12,15 +12,18 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Generate Contribution Graph SVG
+
+      - name: Generate animated contribution graph SVG
         run: node scripts/generate_graph.mjs
+
       - name: Commit and push if changed
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/contribution-graph.svg
-          git commit -m "chore: auto-update contribution graph [skip ci]" || exit 0
+          git diff --cached --quiet || git commit -m "chore: hourly contribution graph refresh [skip ci]"
           git push
