@@ -1,142 +1,169 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
   <defs>
-    <!-- Soft ambient background gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f1218"/>
       <stop offset="50%" stop-color="#111827"/>
       <stop offset="100%" stop-color="#0c1017"/>
     </linearGradient>
 
-    <!-- Soft centre-left colour bloom -->
-    <radialGradient id="bloom1" cx="30%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1e40af" stop-opacity="0.18"/>
+    <radialGradient id="bloom1" cx="28%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#1e40af" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#0f1218" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bloom2" cx="74%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="#0f766e" stop-opacity="0.13"/>
       <stop offset="100%" stop-color="#0f1218" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Soft centre-right colour bloom -->
-    <radialGradient id="bloom2" cx="72%" cy="50%" r="45%">
-      <stop offset="0%" stop-color="#0f766e" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#0f1218" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Glass panel gradient -->
-    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.045"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    <!-- Shimmer sweep for name -->
+    <linearGradient id="nameShimmer" x1="-60%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%"   stop-color="#f1f5f9" stop-opacity="1"/>
+      <stop offset="40%"  stop-color="#f1f5f9" stop-opacity="1"/>
+      <stop offset="55%"  stop-color="#93c5fd" stop-opacity="1"/>
+      <stop offset="70%"  stop-color="#f1f5f9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f1f5f9" stop-opacity="1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;2 0;-1 0" dur="4s" begin="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
     </linearGradient>
 
-    <!-- Underline gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.055"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.008"/>
+    </linearGradient>
+
     <linearGradient id="underlineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="transparent"/>
-      <stop offset="20%" stop-color="#3b82f6" stop-opacity="0.7"/>
-      <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.9"/>
-      <stop offset="80%" stop-color="#14b8a6" stop-opacity="0.6"/>
+      <stop offset="0%"   stop-color="transparent"/>
+      <stop offset="20%"  stop-color="#3b82f6" stop-opacity="0.7"/>
+      <stop offset="50%"  stop-color="#60a5fa" stop-opacity="0.9"/>
+      <stop offset="80%"  stop-color="#14b8a6" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="transparent"/>
     </linearGradient>
 
-    <!-- Subtle border gradient -->
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#334155" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#475569" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#334155" stop-opacity="0.7"/>
+      <stop offset="0%"   stop-color="#334155" stop-opacity="0.9"/>
+      <stop offset="50%"  stop-color="#475569" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.8"/>
     </linearGradient>
 
-    <!-- Pill gradient subtle -->
     <linearGradient id="pillSheen" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.07"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Soft shadow/glow for card edges -->
-    <filter id="softShadow" x="-3%" y="-3%" width="106%" height="106%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
-      <feFlood flood-color="#3b82f6" flood-opacity="0.08" result="colour"/>
-      <feComposite in="colour" in2="blur" operator="in" result="colourBlur"/>
-      <feMerge>
-        <feMergeNode in="colourBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <!-- Subtle soft edge glow -->
+    <filter id="softEdge" x="-2%" y="-2%" width="104%" height="104%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#3b82f6" flood-opacity="0.07" result="c"/>
+      <feComposite in="c" in2="blur" operator="in" result="cb"/>
+      <feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
   <!-- Background -->
   <rect width="800" height="200" fill="url(#bgGrad)"/>
-  <rect width="800" height="200" fill="url(#bloom1)"/>
-  <rect width="800" height="200" fill="url(#bloom2)"/>
 
-  <!-- Glass card -->
-  <rect x="18" y="16" width="764" height="168" rx="16" fill="url(#glassGrad)" stroke="url(#borderGrad)" stroke-width="1" filter="url(#softShadow)"/>
-
-  <!-- Top inner highlight (glass rim) -->
-  <rect x="18" y="16" width="764" height="1" rx="1" fill="#ffffff" opacity="0.06"/>
-
-  <!-- Name — fade in -->
-  <text x="400" y="82"
-    font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Inter, Helvetica, Arial, sans-serif"
-    font-size="46" font-weight="700" letter-spacing="-0.5"
-    fill="#f1f5f9" text-anchor="middle" opacity="0">
-    Mayan Kamboj
-    <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-  </text>
-
-  <!-- Animated underline -->
-  <rect x="400" y="97" width="0" height="1.5" rx="1" fill="url(#underlineGrad)">
-    <animate attributeName="x"     values="400;218" dur="0.75s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="width" values="0;364"   dur="0.75s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  <!-- Breathing bloom 1 -->
+  <rect width="800" height="200" fill="url(#bloom1)">
+    <animate attributeName="opacity" values="1;0.6;1" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
   </rect>
 
-  <!-- Subtitle — fade in -->
-  <text x="400" y="126"
-    font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Inter, Helvetica, Arial, sans-serif"
-    font-size="14" font-weight="400" fill="#94a3b8" text-anchor="middle" letter-spacing="0.3" opacity="0">
-    B.E. Computer Science · AI &amp; Machine Learning
-    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.85s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-  </text>
+  <!-- Breathing bloom 2 (offset phase) -->
+  <rect width="800" height="200" fill="url(#bloom2)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+  </rect>
 
-  <!-- Tech pills row -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
+  <!-- Floating glass card group -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
 
-    <!-- Pill 1: Python -->
-    <g transform="translate(118, 150)">
-      <rect width="72" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
-      <rect width="72" height="22" rx="11" fill="url(#pillSheen)"/>
-      <text x="36" y="15" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">Python</text>
+    <!-- Card -->
+    <rect x="18" y="16" width="764" height="168" rx="16" fill="url(#glassGrad)" stroke="url(#borderGrad)" stroke-width="1" filter="url(#softEdge)"/>
+    <!-- Top rim highlight -->
+    <rect x="18" y="16" width="764" height="1" rx="0.5" fill="#ffffff" opacity="0.07"/>
+
+    <!-- Name fade-in -->
+    <text x="400" y="82"
+      font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Inter, Helvetica, Arial, sans-serif"
+      font-size="46" font-weight="700" letter-spacing="-0.5"
+      fill="url(#nameShimmer)" text-anchor="middle" opacity="0">
+      Mayan Kamboj
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </text>
+
+    <!-- Animated underline — expands from centre -->
+    <rect x="400" y="97" width="0" height="1.5" rx="0.75" fill="url(#underlineGrad)">
+      <animate attributeName="x"     values="400;218" dur="0.8s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+      <animate attributeName="width" values="0;364"   dur="0.8s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+
+    <!-- Subtitle slide-up + fade -->
+    <text x="400" y="134"
+      font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Inter, Helvetica, Arial, sans-serif"
+      font-size="14" font-weight="400" fill="#94a3b8" text-anchor="middle" letter-spacing="0.3" opacity="0">
+      B.E. Computer Science · AI &amp; Machine Learning
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </text>
+
+    <!-- Pills — staggered scale+fade entrance -->
+
+    <!-- Pill 1: Python — begin 1.2s -->
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="0.6;1" dur="0.45s" begin="1.2s" fill="freeze" additive="replace" calcMode="spline" keySplines="0.34 1.56 0.64 1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.2s" fill="freeze"/>
+      <g transform="translate(118,150)">
+        <rect width="72" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <rect width="72" height="22" rx="11" fill="url(#pillSheen)"/>
+        <text x="36" y="15" font-family="-apple-system,'Segoe UI',Inter,sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">Python</text>
+      </g>
     </g>
 
-    <!-- Pill 2: TypeScript -->
-    <g transform="translate(200, 150)">
-      <rect width="90" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
-      <rect width="90" height="22" rx="11" fill="url(#pillSheen)"/>
-      <text x="45" y="15" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">TypeScript</text>
+    <!-- Pill 2: TypeScript — begin 1.35s -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.35s" fill="freeze"/>
+      <g transform="translate(200,150)">
+        <rect width="90" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <rect width="90" height="22" rx="11" fill="url(#pillSheen)"/>
+        <text x="45" y="15" font-family="-apple-system,'Segoe UI',Inter,sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">TypeScript</text>
+      </g>
     </g>
 
-    <!-- Pill 3: Next.js -->
-    <g transform="translate(300, 150)">
-      <rect width="78" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
-      <rect width="78" height="22" rx="11" fill="url(#pillSheen)"/>
-      <text x="39" y="15" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#cbd5e1" text-anchor="middle">Next.js 16</text>
+    <!-- Pill 3: Next.js — begin 1.5s -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.5s" fill="freeze"/>
+      <g transform="translate(300,150)">
+        <rect width="78" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <rect width="78" height="22" rx="11" fill="url(#pillSheen)"/>
+        <text x="39" y="15" font-family="-apple-system,'Segoe UI',Inter,sans-serif" font-size="11" font-weight="500" fill="#cbd5e1" text-anchor="middle">Next.js 16</text>
+      </g>
     </g>
 
-    <!-- Pill 4: FastAPI -->
-    <g transform="translate(389, 150)">
-      <rect width="72" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
-      <rect width="72" height="22" rx="11" fill="url(#pillSheen)"/>
-      <text x="36" y="15" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#6ee7b7" text-anchor="middle">FastAPI</text>
+    <!-- Pill 4: FastAPI — begin 1.65s -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.65s" fill="freeze"/>
+      <g transform="translate(389,150)">
+        <rect width="72" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <rect width="72" height="22" rx="11" fill="url(#pillSheen)"/>
+        <text x="36" y="15" font-family="-apple-system,'Segoe UI',Inter,sans-serif" font-size="11" font-weight="500" fill="#6ee7b7" text-anchor="middle">FastAPI</text>
+      </g>
     </g>
 
-    <!-- Pill 5: Java / C++ -->
-    <g transform="translate(471, 150)">
-      <rect width="84" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
-      <rect width="84" height="22" rx="11" fill="url(#pillSheen)"/>
-      <text x="42" y="15" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#fcd34d" text-anchor="middle">Java · C++</text>
+    <!-- Pill 5: Java/C++ — begin 1.8s -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.8s" fill="freeze"/>
+      <g transform="translate(471,150)">
+        <rect width="84" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <rect width="84" height="22" rx="11" fill="url(#pillSheen)"/>
+        <text x="42" y="15" font-family="-apple-system,'Segoe UI',Inter,sans-serif" font-size="11" font-weight="500" fill="#fcd34d" text-anchor="middle">Java · C++</text>
+      </g>
     </g>
 
-    <!-- Pill 6: PyPI Author -->
-    <g transform="translate(565, 150)">
-      <rect width="90" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
-      <rect width="90" height="22" rx="11" fill="url(#pillSheen)"/>
-      <text x="45" y="15" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#c4b5fd" text-anchor="middle">PyPI Author</text>
+    <!-- Pill 6: PyPI Author — begin 1.95s -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.95s" fill="freeze"/>
+      <g transform="translate(565,150)">
+        <rect width="90" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+        <rect width="90" height="22" rx="11" fill="url(#pillSheen)"/>
+        <text x="45" y="15" font-family="-apple-system,'Segoe UI',Inter,sans-serif" font-size="11" font-weight="500" fill="#c4b5fd" text-anchor="middle">PyPI Author</text>
+      </g>
     </g>
   </g>
 </svg>

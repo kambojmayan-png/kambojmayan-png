@@ -1,9 +1,9 @@
-﻿<div align="center">
-  <img src="assets/hero.svg?v=3" alt="Mayan Kamboj â€” B.E. Computer Science, AI & ML" width="100%"/>
+<div align="center">
+  <img src="assets/hero.svg?v=4" alt="Mayan Kamboj — B.E. Computer Science, AI & ML" width="100%"/>
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=15&duration=3500&pause=1200&color=94a3b8&center=true&vCenter=true&width=540&height=36&lines=B.E.+CSE+Â·+AI+%26+Machine+Learning;building+SENTINEL+%26+chaukas;Python+Â·+TypeScript+Â·+Java+Â·+C%2B%2B;published+on+PyPI+as+sentinel-md;grinding+DSA+on+LeetCode" alt="Typing animation"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=15&duration=3500&pause=1200&color=94a3b8&center=true&vCenter=true&width=540&height=36&lines=B.E.+CSE+·+AI+%26+Machine+Learning;building+SENTINEL+%26+chaukas;Python+·+TypeScript+·+Java+·+C%2B%2B;published+on+PyPI+as+sentinel-md;grinding+DSA+on+LeetCode" alt="Typing animation"/>
 </div>
 
 <br/>
@@ -30,14 +30,14 @@
 
 I'm a **B.E. CSE AI/ML student** focused on AI agent security, defensive systems, and full-stack software engineering. I write Python for security tooling and backend systems, TypeScript for reactive web apps, and Java and C++ for algorithms.
 
-- ðŸ›¡ï¸ **Author of SENTINEL**: Published on PyPI (`sentinel-md`), an offline AST-based security gate that scans AI coding agent configuration files (`CLAUDE.md`, `AGENTS.md`, `.mcp.json`) to prevent prompt injections and unauthorized command execution.
-- âš¡ **Creator of chaukas (à¤šà¥Œà¤•à¤¸)**: Built a UPI fraud fire-drill app at HACKDAY 1.0 with Hindi-first audio simulation designed to protect elders from urgent digital scams.
-- ðŸ§© **Algorithms & Systems**: Actively solving DSA problems in **Java** and **C++** on LeetCode with focus on trees, dynamic programming, and sliding windows.
+- 🛡️ **Author of SENTINEL**: Published on PyPI (`sentinel-md`), an offline AST-based security gate that scans AI coding agent configuration files (`CLAUDE.md`, `AGENTS.md`, `.mcp.json`) to prevent prompt injections and unauthorized command execution.
+- ⚡ **Creator of chaukas (चौकस)**: Built a UPI fraud fire-drill app at HACKDAY 1.0 with Hindi-first audio simulation designed to protect elders from urgent digital scams.
+- 🧩 **Algorithms & Systems**: Actively solving DSA problems in **Java** and **C++** on LeetCode with focus on trees, dynamic programming, and sliding windows.
 
 <br/>
 
 <div align="center">
-  <img src="assets/focus-bars.svg?v=3" alt="Core Competencies & Active Focus â€” Animated Progress Bars" width="100%"/>
+  <img src="assets/focus-bars.svg?v=4" alt="Core Competencies & Active Focus — Animated Progress Bars" width="100%"/>
 </div>
 
 <br/>
@@ -48,13 +48,13 @@ I'm a **B.E. CSE AI/ML student** focused on AI agent security, defensive systems
 
 <br/>
 
-### SENTINEL &nbsp;Â·&nbsp; [live demo](https://sentinel-ivory-two-76.vercel.app/) &nbsp;Â·&nbsp; [repo](https://github.com/kambojmayan-png/SENTINEL) &nbsp;Â·&nbsp; [![PyPI](https://img.shields.io/badge/PyPI-sentinel--md-2f81f7?style=flat&logo=pypi&logoColor=white)](https://pypi.org/project/sentinel-md/)
+### SENTINEL &nbsp;·&nbsp; [live demo](https://sentinel-ivory-two-76.vercel.app/) &nbsp;·&nbsp; [repo](https://github.com/kambojmayan-png/SENTINEL) &nbsp;·&nbsp; [![PyPI](https://img.shields.io/badge/PyPI-sentinel--md-2f81f7?style=flat&logo=pypi&logoColor=white)](https://pypi.org/project/sentinel-md/)
 
-<img src="https://raw.githubusercontent.com/kambojmayan-png/SENTINEL/main/docs/img/banner-dark.svg" alt="SENTINEL â€” see what a file would make your AI coding agent do, before the agent reads it" width="100%"/>
+<img src="https://raw.githubusercontent.com/kambojmayan-png/SENTINEL/main/docs/img/banner-dark.svg" alt="SENTINEL — see what a file would make your AI coding agent do, before the agent reads it" width="100%"/>
 
 <br/>
 
-An offline security scanner for AI coding agent config files. AI agents like Claude Code, Cursor, and Gemini CLI treat repository files (`CLAUDE.md`, `AGENTS.md`, `.mcp.json`) as instructions â€” whoever edits those files controls what the agent does with your terminal and credentials. SENTINEL reads those files before the agent does and explains, in plain English, what each one would make the agent do.
+An offline security scanner for AI coding agent config files. AI agents like Claude Code, Cursor, and Gemini CLI treat repository files (`CLAUDE.md`, `AGENTS.md`, `.mcp.json`) as instructions — whoever edits those files controls what the agent does with your terminal and credentials. SENTINEL reads those files before the agent does and explains, in plain English, what each one would make the agent do.
 
 Ships as a CLI, a VS Code extension, a GitHub Action, and a web app. Runs fully offline, no API key required. Published on PyPI as `sentinel-md`.
 
@@ -64,13 +64,13 @@ Ships as a CLI, a VS Code extension, a GitHub Action, and a web app. Runs fully 
 
 <br/><br/>
 
-### chaukas / à¤šà¥Œà¤•à¤¸ &nbsp;Â·&nbsp; [live app](https://chaukas.vercel.app) &nbsp;Â·&nbsp; [repo](https://github.com/kambojmayan-png/chaukas)
+### chaukas / चौकस &nbsp;·&nbsp; [live app](https://chaukas.vercel.app) &nbsp;·&nbsp; [repo](https://github.com/kambojmayan-png/chaukas)
 
-<img src="https://raw.githubusercontent.com/kambojmayan-png/chaukas/main/docs/banner.png" alt="à¤šà¥Œà¤•à¤¸ Â· Chaukas â€” a scam fire-drill your parents can actually use" width="100%"/>
+<img src="https://raw.githubusercontent.com/kambojmayan-png/chaukas/main/docs/banner.png" alt="चौकस · Chaukas — a scam fire-drill your parents can actually use" width="100%"/>
 
 <br/>
 
-A UPI fraud fire-drill app built at HACKDAY 1.0 in one day. Most UPI fraud victims aren't hacked â€” under fear and time pressure they send the money themselves. Chaukas simulates three real scam scenarios with Hindi voice guidance, designed for elders rather than developers.
+A UPI fraud fire-drill app built at HACKDAY 1.0 in one day. Most UPI fraud victims aren't hacked — under fear and time pressure they send the money themselves. Chaukas simulates three real scam scenarios with Hindi voice guidance, designed for elders rather than developers.
 
 <br/>
 
@@ -86,7 +86,7 @@ A UPI fraud fire-drill app built at HACKDAY 1.0 in one day. Most UPI fraud victi
 
 <br/><br/>
 
-### AEGIS Global News &nbsp;Â·&nbsp; [repo](https://github.com/kambojmayan-png/AEGIS-GLOBAL-NEWS)
+### AEGIS Global News &nbsp;·&nbsp; [repo](https://github.com/kambojmayan-png/AEGIS-GLOBAL-NEWS)
 
 A news application built with Next.js and TypeScript, exploring server-side rendering and API integration.
 
@@ -174,7 +174,7 @@ A news application built with Next.js and TypeScript, exploring server-side rend
 <br/><br/>
 
 <img
-  src="assets/contribution-graph.svg"
+  src="assets/contribution-graph.svg?v=4"
   alt="GitHub Contribution Calendar"
   width="100%"
 />
@@ -217,7 +217,7 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 ## Terminal
 
 <div align="center">
-  <img src="assets/terminal.svg?v=3" alt="Interactive Developer Terminal" width="100%"/>
+  <img src="assets/terminal.svg?v=4" alt="Interactive Developer Terminal" width="100%"/>
 </div>
 
 <br/>
@@ -227,7 +227,7 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 ## Connect with me
 
 <div align="center">
-  <img src="assets/connect.svg?v=3" alt="Connect with me â€” LinkedIn, LeetCode, Instagram, GitHub" width="100%"/>
+  <img src="assets/connect.svg?v=4" alt="Connect with me — LinkedIn, LeetCode, Instagram, GitHub" width="100%"/>
 </div>
 
 <br/>
@@ -236,11 +236,11 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 
 | Platform | Handle / Profile | Direct Link |
 |:---|:---|:---:|
-| ðŸ‘” **LinkedIn** | `Mayan Kamboj` | [linkedin.com/in/mayan-kamboj](https://www.linkedin.com/in/mayan-kamboj-296213382/) |
-| ðŸ§© **LeetCode** | `Mayan_Kamboj` | [leetcode.com/u/Mayan_Kamboj](https://leetcode.com/u/Mayan_Kamboj/) |
-| ðŸ“¸ **Instagram** | `@mayan_kamboj` | [instagram.com/mayan_kamboj](https://instagram.com/mayan_kamboj) |
-| ðŸ’» **GitHub** | `kambojmayan-png` | [github.com/kambojmayan-png](https://github.com/kambojmayan-png) |
-| âœ‰ï¸ **Email** | `kambojmayan@gmail.com` | [kambojmayan@gmail.com](mailto:kambojmayan@gmail.com) |
+| 👔 **LinkedIn** | `Mayan Kamboj` | [linkedin.com/in/mayan-kamboj](https://www.linkedin.com/in/mayan-kamboj-296213382/) |
+| 🧩 **LeetCode** | `Mayan_Kamboj` | [leetcode.com/u/Mayan_Kamboj](https://leetcode.com/u/Mayan_Kamboj/) |
+| 📸 **Instagram** | `@mayan_kamboj` | [instagram.com/mayan_kamboj](https://instagram.com/mayan_kamboj) |
+| 💻 **GitHub** | `kambojmayan-png` | [github.com/kambojmayan-png](https://github.com/kambojmayan-png) |
+| ✉️ **Email** | `kambojmayan@gmail.com` | [kambojmayan@gmail.com](mailto:kambojmayan@gmail.com) |
 
 <br/>
 
@@ -251,5 +251,5 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 <br/>
 
 <div align="center">
-  <img src="assets/footer.svg?v=3" alt="Divider" width="100%"/>
+  <img src="assets/footer.svg?v=4" alt="Divider" width="100%"/>
 </div>

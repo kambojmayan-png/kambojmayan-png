@@ -3,11 +3,28 @@
     <linearGradient id="footerLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="transparent"/>
       <stop offset="25%" stop-color="#1e293b"/>
-      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.8"/>
       <stop offset="75%" stop-color="#1e293b"/>
       <stop offset="100%" stop-color="transparent"/>
     </linearGradient>
+    <filter id="dotGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <line x1="50" y1="12" x2="750" y2="12" stroke="url(#footerLine)" stroke-width="1"/>
-  <circle cx="400" cy="12" r="2.5" fill="#334155"/>
+
+  <!-- Animated expanding divider line -->
+  <line x1="400" y1="12" x2="400" y2="12" stroke="url(#footerLine)" stroke-width="1">
+    <animate attributeName="x1" values="400;50" dur="0.8s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    <animate attributeName="x2" values="400;750" dur="0.8s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </line>
+
+  <!-- Subtle breathing glowing center jewel -->
+  <circle cx="400" cy="12" r="2.5" fill="#60a5fa" filter="url(#dotGlow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+    <animate attributeName="r" values="2;3;2" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+  </circle>
 </svg>
