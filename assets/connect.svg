@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 140" width="740" height="140">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="connBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1520"/>
+      <stop offset="100%" stop-color="#090d14"/>
+    </linearGradient>
+
+    <!-- Signal Beam Animation -->
+    <linearGradient id="signalBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+
+    <filter id="nodeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .pulse-line {
+      stroke-dasharray: 80 200;
+      animation: sweepLine 4s linear infinite;
+    }
+    @keyframes sweepLine {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: -560; }
+    }
+  </style>
+
+  <!-- Card Body -->
+  <rect width="740" height="140" rx="12" fill="url(#connBg)" stroke="#1e293b" stroke-width="1.2"/>
+
+  <!-- Top Accent Bar -->
+  <rect width="740" height="3" rx="1.5" fill="#38bdf8" opacity="0.75"/>
+
+  <!-- Header text -->
+  <text x="30" y="28" font-family="'Courier New', Courier, monospace" font-size="11.5" font-weight="bold" fill="#64748b" letter-spacing="2">
+    <tspan fill="#10b981">●</tspan>  CONNECT // NETWORKING &amp; COLLABORATION
+  </text>
+  <text x="710" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#38bdf8" text-anchor="end" font-weight="600" letter-spacing="0.5">
+    OPEN FOR ROLES &amp; PROJECTS
+  </text>
+
+  <!-- Connecting Circuit Line -->
+  <line x1="30" y1="42" x2="710" y2="42" stroke="#1e293b" stroke-width="1"/>
+  <line x1="30" y1="42" x2="710" y2="42" stroke="url(#signalBeam)" stroke-width="1.8" class="pulse-line"/>
+
+  <!-- 4 Social Cards inside SVG -->
+  <!-- Node 1: LinkedIn -->
+  <g transform="translate(30, 56)">
+    <rect width="158" height="66" rx="8" fill="#131b28" stroke="#1e3a5f" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="66" rx="1.5" fill="#0a66c2"/>
+    <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#0a66c2">LINKEDIN</text>
+    <text x="14" y="42" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#f8fafc">Mayan Kamboj</text>
+    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9.5" fill="#64748b">/in/mayankamboj</text>
+  </g>
+
+  <!-- Node 2: LeetCode -->
+  <g transform="translate(204, 56)">
+    <rect width="158" height="66" rx="8" fill="#131b28" stroke="#1e3a5f" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="66" rx="1.5" fill="#ffa116"/>
+    <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffa116">LEETCODE</text>
+    <text x="14" y="42" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#f8fafc">kambojmayan-png</text>
+    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9.5" fill="#64748b">DSA Problem Solver</text>
+  </g>
+
+  <!-- Node 3: Instagram -->
+  <g transform="translate(378, 56)">
+    <rect width="158" height="66" rx="8" fill="#131b28" stroke="#1e3a5f" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="66" rx="1.5" fill="#e4405f"/>
+    <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#e4405f">INSTAGRAM</text>
+    <text x="14" y="42" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#f8fafc">@mayankamboj</text>
+    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9.5" fill="#64748b">Direct Message</text>
+  </g>
+
+  <!-- Node 4: GitHub / Email -->
+  <g transform="translate(552, 56)">
+    <rect width="158" height="66" rx="8" fill="#131b28" stroke="#1e3a5f" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="66" rx="1.5" fill="#10b981"/>
+    <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#10b981">GITHUB &amp; EMAIL</text>
+    <text x="14" y="42" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#f8fafc">kambojmayan-png</text>
+    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9.5" fill="#64748b">kambojmayan@gmail</text>
+  </g>
+</svg>

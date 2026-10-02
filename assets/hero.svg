@@ -1,51 +1,184 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 185" width="800" height="185">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220">
   <defs>
-    <!-- Subtle underline gradient -->
+    <!-- Background Radial Glow -->
+    <radialGradient id="centerGlow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#0284c7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0a0e17" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1e293b" stroke-width="0.6" opacity="0.45"/>
+    </pattern>
+
+    <!-- Animated Border Gradient -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#3b82f6" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Animated Underline Accent -->
     <linearGradient id="lineAccent" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="transparent"/>
-      <stop offset="30%"  stop-color="#2f81f7" stop-opacity="0.8"/>
-      <stop offset="70%"  stop-color="#2f81f7" stop-opacity="0.8"/>
+      <stop offset="25%"  stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="50%"  stop-color="#60a5fa" stop-opacity="1"/>
+      <stop offset="75%"  stop-color="#38bdf8" stop-opacity="0.9"/>
       <stop offset="100%" stop-color="transparent"/>
     </linearGradient>
+
+    <!-- Shimmer for text -->
+    <linearGradient id="textShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="30%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#93c5fd"/>
+      <stop offset="70%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter for Card -->
+    <filter id="cardGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="800" height="185" fill="#0d1117"/>
+  <style>
+    .glow-border {
+      stroke-dasharray: 200 400;
+      animation: dashMove 10s linear infinite;
+    }
+    @keyframes dashMove {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: -1200; }
+    }
+    .scan-beam {
+      animation: scanSweep 6s ease-in-out infinite;
+    }
+    @keyframes scanSweep {
+      0%, 100% { transform: translateY(0); opacity: 0; }
+      15% { opacity: 0.35; }
+      50% { transform: translateY(210px); opacity: 0.5; }
+      85% { opacity: 0.35; }
+    }
+    .badge-pill {
+      transition: all 0.3s ease;
+    }
+  </style>
 
-  <!-- Top accent strip -->
-  <rect width="800" height="2" fill="#2f81f7" opacity="0.7"/>
+  <!-- Card Background -->
+  <rect x="2" y="2" width="796" height="216" rx="14" fill="#0b0f17"/>
+  <rect x="2" y="2" width="796" height="216" rx="14" fill="url(#centerGlow)"/>
+  <rect x="2" y="2" width="796" height="216" rx="14" fill="url(#grid)"/>
 
-  <!-- Bottom border -->
-  <line x1="0" y1="184" x2="800" y2="184" stroke="#30363d" stroke-width="0.8"/>
+  <!-- Static Base Border -->
+  <rect x="2" y="2" width="796" height="216" rx="14" fill="none" stroke="#1e293b" stroke-width="1.2"/>
 
-  <!-- Name — clean white, no gradient -->
-  <text x="400" y="82"
-    font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
-    font-size="46" font-weight="700" letter-spacing="2"
-    fill="#e6edf3" text-anchor="middle" opacity="0">
-    Mayan Kamboj
-    <animate attributeName="opacity" values="0;1" dur="0.6s" fill="freeze" begin="0.15s"/>
+  <!-- Animated Border Tracing Beam -->
+  <rect x="2" y="2" width="796" height="216" rx="14" fill="none" stroke="url(#borderGradient)" stroke-width="1.8" class="glow-border"/>
+
+  <!-- Subtle Horizontal Scanning Line -->
+  <line x1="10" y1="5" x2="790" y2="5" stroke="#38bdf8" stroke-width="0.8" class="scan-beam"/>
+
+  <!-- Cyber Corner Accents -->
+  <path d="M 10 26 L 10 10 L 26 10" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.85"/>
+  <path d="M 790 26 L 790 10 L 774 10" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.85"/>
+  <path d="M 10 194 L 10 210 L 26 210" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.85"/>
+  <path d="M 790 194 L 790 210 L 774 210" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.85"/>
+
+  <!-- Top Control Dots (Terminal Style) -->
+  <g transform="translate(24, 18)">
+    <circle cx="0"  cy="0" r="4.5" fill="#f43f5e" opacity="0.9"/>
+    <circle cx="14" cy="0" r="4.5" fill="#eab308" opacity="0.9"/>
+    <circle cx="28" cy="0" r="4.5" fill="#10b981" opacity="0.9"/>
+  </g>
+
+  <!-- Top Center Tech Coordinates -->
+  <text x="400" y="21"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10.5" fill="#64748b" text-anchor="middle" letter-spacing="2">
+    DEV // PORTFOLIO // B.E. CSE AI/ML
   </text>
 
-  <!-- Expanding underline — blue, fades in after name -->
-  <rect x="400" y="97" width="0" height="1.5" rx="1" fill="url(#lineAccent)" opacity="0.9">
-    <animate attributeName="x"     values="400;240" dur="0.7s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.25 0.46 0.45 0.94"/>
-    <animate attributeName="width" values="0;320"   dur="0.7s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.25 0.46 0.45 0.94"/>
+  <!-- Live Pulse Beacon (Top Right) -->
+  <g transform="translate(710, 18)">
+    <circle cx="0" cy="0" r="3.5" fill="#10b981"/>
+    <circle cx="0" cy="0" r="3.5" fill="none" stroke="#10b981" stroke-width="1.5">
+      <animate attributeName="r" values="3.5;10;3.5" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0;0.9" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="14" y="3.5"
+      font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+      font-size="10" font-weight="700" fill="#10b981" letter-spacing="1.5">
+      ONLINE
+    </text>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="20" y1="36" x2="780" y2="36" stroke="#1e293b" stroke-width="0.8"/>
+
+  <!-- Name: Mayan Kamboj -->
+  <text x="400" y="96"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif"
+    font-size="44" font-weight="800" letter-spacing="3"
+    fill="url(#textShimmer)" text-anchor="middle">
+    Mayan Kamboj
+    <animate attributeName="opacity" values="0;1" dur="0.8s" fill="freeze"/>
+  </text>
+
+  <!-- Expanding Animated Underline -->
+  <rect x="400" y="112" width="0" height="2" rx="1" fill="url(#lineAccent)">
+    <animate attributeName="x" values="400;220" dur="0.8s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.46 0.45 0.94"/>
+    <animate attributeName="width" values="0;360" dur="0.8s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.46 0.45 0.94"/>
   </rect>
 
-  <!-- Role / subtitle -->
-  <text x="400" y="128"
-    font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
-    font-size="15" fill="#2f81f7" text-anchor="middle" letter-spacing="0.8" opacity="0">
-    B.E. Computer Science · AI &amp; ML
-    <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" begin="1s"/>
+  <!-- Role / Subtitle -->
+  <text x="400" y="142"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    font-size="14.5" font-weight="600" fill="#38bdf8" text-anchor="middle" letter-spacing="1.2">
+    B.E. Computer Science · Artificial Intelligence &amp; Machine Learning
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.4s" fill="freeze"/>
   </text>
 
-  <!-- Stack line -->
-  <text x="400" y="158"
-    font-family="'Courier New', Courier, monospace"
-    font-size="12.5" fill="#848d97" text-anchor="middle" letter-spacing="3" opacity="0">
-    Python · TypeScript · Java · C++
-    <animate attributeName="opacity" values="0;0.9" dur="0.5s" fill="freeze" begin="1.3s"/>
-  </text>
+  <!-- Tech Badges Bar (Inside SVG) -->
+  <g transform="translate(100, 168)">
+    <!-- Pill 1: Python -->
+    <g transform="translate(0, 0)">
+      <rect width="78" height="24" rx="6" fill="#131d2e" stroke="#1e3a5f" stroke-width="1"/>
+      <text x="39" y="16" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#60a5fa" text-anchor="middle">Python</text>
+    </g>
+
+    <!-- Pill 2: TypeScript -->
+    <g transform="translate(86, 0)">
+      <rect width="96" height="24" rx="6" fill="#131d2e" stroke="#1e3a5f" stroke-width="1"/>
+      <text x="48" y="16" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#60a5fa" text-anchor="middle">TypeScript</text>
+    </g>
+
+    <!-- Pill 3: Next.js 16 -->
+    <g transform="translate(190, 0)">
+      <rect width="88" height="24" rx="6" fill="#131d2e" stroke="#1e3a5f" stroke-width="1"/>
+      <text x="44" y="16" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#93c5fd" text-anchor="middle">Next.js 16</text>
+    </g>
+
+    <!-- Pill 4: FastAPI -->
+    <g transform="translate(286, 0)">
+      <rect width="82" height="24" rx="6" fill="#131d2e" stroke="#1e3a5f" stroke-width="1"/>
+      <text x="41" y="16" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#34d399" text-anchor="middle">FastAPI</text>
+    </g>
+
+    <!-- Pill 5: DSA / LeetCode -->
+    <g transform="translate(376, 0)">
+      <rect width="112" height="24" rx="6" fill="#131d2e" stroke="#1e3a5f" stroke-width="1"/>
+      <text x="56" y="16" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#fbbf24" text-anchor="middle">DSA · Java/C++</text>
+    </g>
+
+    <!-- Pill 6: PyPI Author -->
+    <g transform="translate(496, 0)">
+      <rect width="104" height="24" rx="6" fill="#131d2e" stroke="#1e3a5f" stroke-width="1"/>
+      <text x="52" y="16" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#c084fc" text-anchor="middle">PyPI Author</text>
+    </g>
+  </g>
 </svg>

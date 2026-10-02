@@ -3,18 +3,22 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3500&pause=1200&color=848d97&center=true&vCenter=true&width=480&height=36&lines=B.E.+CSE+AI%2FML+student;building+SENTINEL+and+chaukas;Python+%C2%B7+TypeScript+%C2%B7+Java+%C2%B7+C%2B%2B;working+through+DSA+and+backend" alt="Typing"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=3200&pause=1000&color=38bdf8&center=true&vCenter=true&width=560&height=38&lines=B.E.+CSE+AI%2FML+Student;Author+of+SENTINEL+%C2%B7+PyPI%3A+sentinel-md;Creator+of+chaukas+%C2%B7+UPI+Fraud+Fire-Drill;Full-Stack+Next.js+16+%C2%B7+FastAPI+%C2%B7+TypeScript;DSA+in+Java+%26+C%2B%2B+%C2%B7+LeetCode+Solver" alt="Typing animation"/>
 </div>
 
 <br/>
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/github-kambojmayan--png-24292f?style=flat&logo=github)](https://github.com/kambojmayan-png)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mayankamboj)
 &nbsp;
-[![SENTINEL demo](https://img.shields.io/badge/SENTINEL-live%20demo-2f81f7?style=flat&logo=vercel&logoColor=white)](https://sentinel-ivory-two-76.vercel.app/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/kambojmayan-png/)
 &nbsp;
-[![chaukas](https://img.shields.io/badge/chaukas-live%20app-2f81f7?style=flat&logo=vercel&logoColor=white)](https://chaukas.vercel.app)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/mayankamboj)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-kambojmayan--png-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kambojmayan-png)
+&nbsp;
+[![PyPI](https://img.shields.io/badge/PyPI-sentinel--md-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/sentinel-md/)
 
 </div>
 
@@ -24,9 +28,17 @@
 
 ## About
 
-I'm a B.E. CSE AI/ML student. I write Python for tooling and backend work, TypeScript for web apps, and Java and C++ for algorithms. Most of what I learn, I learn by building things.
+I'm a **B.E. CSE AI/ML student** focused on AI agent security, defensive systems, and full-stack software engineering. I write Python for security tooling and backend systems, TypeScript for reactive web apps, and Java and C++ for algorithms.
 
-Right now I'm working on an AI agent security scanner, a fraud-prevention app I built at a hackathon, and grinding through LeetCode.
+- 🛡️ **Author of SENTINEL**: Published on PyPI (`sentinel-md`), an offline AST-based security gate that scans AI coding agent configuration files (`CLAUDE.md`, `AGENTS.md`, `.mcp.json`) to prevent prompt injections and unauthorized command execution.
+- ⚡ **Creator of chaukas (चौकस)**: Built a UPI fraud fire-drill app at HACKDAY 1.0 with Hindi-first audio simulation designed to protect elders from urgent digital scams.
+- 🧩 **Algorithms & Systems**: Actively solving DSA problems in **Java** and **C++** on LeetCode with focus on trees, dynamic programming, and sliding windows.
+
+<br/>
+
+<div align="center">
+  <img src="assets/focus-bars.svg" alt="Core Competencies & Active Focus — Animated Progress Bars" width="100%"/>
+</div>
 
 <br/>
 
@@ -135,7 +147,7 @@ A news application built with Next.js and TypeScript, exploring server-side rend
 
 ---
 
-## GitHub
+## GitHub & Activity
 
 <div align="center">
 
@@ -173,11 +185,24 @@ A news application built with Next.js and TypeScript, exploring server-side rend
 
 ---
 
-## DSA
+## DSA & Problem Solving
 
-Working through LeetCode consistently in Java and C++. Topics so far: strings, hash tables, two pointers, sliding window, stack, basic math.
+Solving LeetCode problems consistently in **Java** and **C++**.
 
-→ [Solutions repo](https://github.com/kambojmayan-png/Leetcode)
+| Category | Topics & Patterns Explored | Solutions Repo |
+|:---|:---|:---:|
+| **Data Structures** | Strings, Hash Tables, Stacks, Linked Lists, Binary Trees, BSTs | [View Leetcode Repo](https://github.com/kambojmayan-png/Leetcode) |
+| **Algorithms** | Two Pointers, Sliding Window, DFS, Dynamic Programming, Greedy | [View Leetcode Repo](https://github.com/kambojmayan-png/Leetcode) |
+
+<br/>
+
+<div align="center">
+
+[![LeetCode Profile](https://img.shields.io/badge/LeetCode-kambojmayan--png-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/kambojmayan-png/)
+&nbsp;
+[![LeetCode Solutions Repo](https://img.shields.io/badge/Repo-kambojmayan--png%2FLeetcode-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kambojmayan-png/Leetcode)
+
+</div>
 
 <br/>
 
@@ -186,21 +211,39 @@ Working through LeetCode consistently in Java and C++. Topics so far: strings, h
 ## Terminal
 
 <div align="center">
-  <img src="assets/terminal.svg" alt="bash session: whoami mayan kamboj, ls projects SENTINEL chaukas AEGIS Leetcode, cat now.txt" width="100%"/>
+  <img src="assets/terminal.svg" alt="Interactive Developer Terminal" width="100%"/>
 </div>
 
 <br/>
 
 ---
 
+## Connect with me
+
 <div align="center">
-  <sub>Open to collaborating on AI/ML, security tools, and civic tech.</sub>
-  <br/>
-  <sub><a href="https://github.com/kambojmayan-png">github.com/kambojmayan-png</a></sub>
+  <img src="assets/connect.svg" alt="Connect with me — LinkedIn, LeetCode, Instagram, GitHub" width="100%"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="assets/footer.svg" alt="" width="100%"/>
+
+| Platform | Handle / Profile | Direct Link |
+|:---|:---|:---:|
+| 👔 **LinkedIn** | `Mayan Kamboj` | [linkedin.com/in/mayankamboj](https://linkedin.com/in/mayankamboj) |
+| 🧩 **LeetCode** | `kambojmayan-png` | [leetcode.com/u/kambojmayan-png](https://leetcode.com/u/kambojmayan-png/) |
+| 📸 **Instagram** | `@mayankamboj` | [instagram.com/mayankamboj](https://instagram.com/mayankamboj) |
+| 💻 **GitHub** | `kambojmayan-png` | [github.com/kambojmayan-png](https://github.com/kambojmayan-png) |
+| ✉️ **Email** | `kambojmayan@gmail.com` | [kambojmayan@gmail.com](mailto:kambojmayan@gmail.com) |
+
+<br/>
+
+<sub>Open to collaborating on AI/ML security tools, open-source projects, and engineering opportunities. Feel free to connect!</sub>
+
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="assets/footer.svg" alt="Divider" width="100%"/>
 </div>

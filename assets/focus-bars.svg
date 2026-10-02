@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 220" width="740" height="220">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111620"/>
+      <stop offset="100%" stop-color="#0a0d13"/>
+    </linearGradient>
+
+    <!-- Bar Track -->
+    <linearGradient id="track" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e2530"/>
+      <stop offset="100%" stop-color="#161c24"/>
+    </linearGradient>
+
+    <!-- Individual Bar Gradients -->
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="bar4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+
+    <!-- Bar Tip Glow -->
+    <filter id="barGlow" x="-5%" y="-100%" width="110%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card Body -->
+  <rect width="740" height="220" rx="10" fill="url(#cardBg)" stroke="#263040" stroke-width="1"/>
+
+  <!-- Header -->
+  <rect width="740" height="42" rx="10" fill="#141a24"/>
+  <rect y="32" width="740" height="10" fill="#141a24"/>
+  <line x1="0" y1="42" x2="740" y2="42" stroke="#263040" stroke-width="0.8"/>
+
+  <!-- Title -->
+  <text x="25" y="27"
+    font-family="'Courier New', Courier, monospace"
+    font-size="12" font-weight="bold" fill="#8b949e" letter-spacing="2">
+    <tspan fill="#38bdf8">▶</tspan>  CORE COMPETENCIES &amp; ACTIVE FOCUS
+  </text>
+
+  <!-- Bar 1: Agentic AI & Security -->
+  <text x="25" y="78" font-family="'Courier New', monospace" font-size="12" fill="#cdd9e5">Agentic AI &amp; Security Tools</text>
+  <rect x="290" y="66" width="360" height="9" rx="4.5" fill="url(#track)"/>
+  <rect x="290" y="66" width="0" height="9" rx="4.5" fill="url(#bar1)" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;310" dur="1.4s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="664" y="75" font-family="'Courier New', monospace" font-size="11" fill="#60a5fa" opacity="0">
+    86%
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.4s" fill="freeze"/>
+  </text>
+
+  <!-- Bar 2: Python / Backend -->
+  <text x="25" y="114" font-family="'Courier New', monospace" font-size="12" fill="#cdd9e5">Python, FastAPI &amp; CLI Tooling</text>
+  <rect x="290" y="102" width="360" height="9" rx="4.5" fill="url(#track)"/>
+  <rect x="290" y="102" width="0" height="9" rx="4.5" fill="url(#bar2)" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;295" dur="1.4s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="664" y="111" font-family="'Courier New', monospace" font-size="11" fill="#c084fc" opacity="0">
+    82%
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.65s" fill="freeze"/>
+  </text>
+
+  <!-- Bar 3: Full-Stack Web -->
+  <text x="25" y="150" font-family="'Courier New', monospace" font-size="12" fill="#cdd9e5">TypeScript &amp; Next.js 16 Web</text>
+  <rect x="290" y="138" width="360" height="9" rx="4.5" fill="url(#track)"/>
+  <rect x="290" y="138" width="0" height="9" rx="4.5" fill="url(#bar3)" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;280" dur="1.4s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="664" y="147" font-family="'Courier New', monospace" font-size="11" fill="#34d399" opacity="0">
+    78%
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.9s" fill="freeze"/>
+  </text>
+
+  <!-- Bar 4: DSA & Problem Solving -->
+  <text x="25" y="186" font-family="'Courier New', monospace" font-size="12" fill="#cdd9e5">DSA &amp; LeetCode (Java · C++)</text>
+  <rect x="290" y="174" width="360" height="9" rx="4.5" fill="url(#track)"/>
+  <rect x="290" y="174" width="0" height="9" rx="4.5" fill="url(#bar4)" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;260" dur="1.4s" begin="0.95s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="664" y="183" font-family="'Courier New', monospace" font-size="11" fill="#fbbf24" opacity="0">
+    72%
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.15s" fill="freeze"/>
+  </text>
+</svg>
