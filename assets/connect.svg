@@ -58,7 +58,7 @@
     <rect x="0" y="0" width="3" height="66" rx="1.5" fill="#0a66c2"/>
     <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#0a66c2">LINKEDIN</text>
     <text x="14" y="42" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#f8fafc">Mayan Kamboj</text>
-    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9.5" fill="#64748b">/in/mayankamboj</text>
+    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9" fill="#64748b">/in/mayan-kamboj</text>
   </g>
 
   <!-- Node 2: LeetCode -->
@@ -66,8 +66,8 @@
     <rect width="158" height="66" rx="8" fill="#131b28" stroke="#1e3a5f" stroke-width="1"/>
     <rect x="0" y="0" width="3" height="66" rx="1.5" fill="#ffa116"/>
     <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffa116">LEETCODE</text>
-    <text x="14" y="42" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#f8fafc">kambojmayan-png</text>
-    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9.5" fill="#64748b">DSA Problem Solver</text>
+    <text x="14" y="42" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#f8fafc">Mayan_Kamboj</text>
+    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9" fill="#64748b">Problem Solver</text>
   </g>
 
   <!-- Node 3: Instagram -->
@@ -75,8 +75,8 @@
     <rect width="158" height="66" rx="8" fill="#131b28" stroke="#1e3a5f" stroke-width="1"/>
     <rect x="0" y="0" width="3" height="66" rx="1.5" fill="#e4405f"/>
     <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#e4405f">INSTAGRAM</text>
-    <text x="14" y="42" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#f8fafc">@mayankamboj</text>
-    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9.5" fill="#64748b">Direct Message</text>
+    <text x="14" y="42" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#f8fafc">@mayan_kamboj</text>
+    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9" fill="#64748b">Direct Message</text>
   </g>
 
   <!-- Node 4: GitHub / Email -->
@@ -85,6 +85,6 @@
     <rect x="0" y="0" width="3" height="66" rx="1.5" fill="#10b981"/>
     <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#10b981">GITHUB &amp; EMAIL</text>
     <text x="14" y="42" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#f8fafc">kambojmayan-png</text>
-    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9.5" fill="#64748b">kambojmayan@gmail</text>
+    <text x="14" y="56" font-family="'Courier New', monospace" font-size="9" fill="#64748b">kambojmayan@gmail</text>
   </g>
 </svg>

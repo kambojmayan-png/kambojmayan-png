@@ -10,11 +10,11 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mayankamboj)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayan-kamboj-296213382/)
 &nbsp;
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/kambojmayan-png/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Mayan__Kamboj-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Mayan_Kamboj/)
 &nbsp;
-[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/mayankamboj)
+[![Instagram](https://img.shields.io/badge/Instagram-@mayan__kamboj-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/mayan_kamboj)
 &nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-kambojmayan--png-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kambojmayan-png)
 &nbsp;
@@ -198,7 +198,13 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 
 <div align="center">
 
-[![LeetCode Profile](https://img.shields.io/badge/LeetCode-kambojmayan--png-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/kambojmayan-png/)
+<a href="https://leetcode.com/u/Mayan_Kamboj/">
+  <img src="https://leetcard.jacoblin.cool/Mayan_Kamboj?theme=dark&font=Ubuntu" alt="LeetCode stats" height="175"/>
+</a>
+
+<br/><br/>
+
+[![LeetCode Profile](https://img.shields.io/badge/LeetCode-Mayan__Kamboj-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Mayan_Kamboj/)
 &nbsp;
 [![LeetCode Solutions Repo](https://img.shields.io/badge/Repo-kambojmayan--png%2FLeetcode-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kambojmayan-png/Leetcode)
 
@@ -230,9 +236,9 @@ Solving LeetCode problems consistently in **Java** and **C++**.
 
 | Platform | Handle / Profile | Direct Link |
 |:---|:---|:---:|
-| 👔 **LinkedIn** | `Mayan Kamboj` | [linkedin.com/in/mayankamboj](https://linkedin.com/in/mayankamboj) |
-| 🧩 **LeetCode** | `kambojmayan-png` | [leetcode.com/u/kambojmayan-png](https://leetcode.com/u/kambojmayan-png/) |
-| 📸 **Instagram** | `@mayankamboj` | [instagram.com/mayankamboj](https://instagram.com/mayankamboj) |
+| 👔 **LinkedIn** | `Mayan Kamboj` | [linkedin.com/in/mayan-kamboj](https://www.linkedin.com/in/mayan-kamboj-296213382/) |
+| 🧩 **LeetCode** | `Mayan_Kamboj` | [leetcode.com/u/Mayan_Kamboj](https://leetcode.com/u/Mayan_Kamboj/) |
+| 📸 **Instagram** | `@mayan_kamboj` | [instagram.com/mayan_kamboj](https://instagram.com/mayan_kamboj) |
 | 💻 **GitHub** | `kambojmayan-png` | [github.com/kambojmayan-png](https://github.com/kambojmayan-png) |
 | ✉️ **Email** | `kambojmayan@gmail.com` | [kambojmayan@gmail.com](mailto:kambojmayan@gmail.com) |
 
