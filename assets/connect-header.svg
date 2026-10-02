@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 34" width="704" height="34">
+  <defs>
+    <linearGradient id="headerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="25%" stop-color="#3b82f6" stop-opacity="0.7"/>
+      <stop offset="75%" stop-color="#14b8a6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <filter id="beaconGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Top accent breathing line -->
+  <rect x="0" y="1" width="704" height="1.5" rx="0.75" fill="url(#headerAccent)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+  </rect>
+
+  <!-- Section label -->
+  <text x="6" y="21"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif"
+    font-size="9" font-weight="600" fill="#475569" letter-spacing="2.5">
+    CONNECT · NETWORKING
+  </text>
+
+  <!-- Pulsating status beacon -->
+  <circle cx="664" cy="18" r="3.5" fill="#10b981" filter="url(#beaconGlow)">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+    <animate attributeName="r" values="3;4.2;3" dur="2.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+  </circle>
+  <text x="674" y="21"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif"
+    font-size="9" font-weight="700" fill="#10b981" letter-spacing="1.5">
+    OPEN
+  </text>
+
+  <!-- Divider line -->
+  <line x1="0" y1="30" x2="704" y2="30" stroke="#1e293b" stroke-width="0.8"/>
+</svg>

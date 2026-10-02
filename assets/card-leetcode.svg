@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 82" width="172" height="82">
+  <defs>
+    <linearGradient id="bgLc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14110c"/>
+      <stop offset="100%" stop-color="#1c160e"/>
+    </linearGradient>
+    <linearGradient id="glassLc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
+    <linearGradient id="shimmerLc" x1="-100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="transparent"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;2 0;-1 0" dur="5.5s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+    </linearGradient>
+    <filter id="shadowLc" x="-6%" y="-10%" width="112%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#f59e0b" flood-opacity="0.14" result="c"/>
+      <feComposite in="c" in2="blur" operator="in" result="cb"/>
+      <feMerge>
+        <feMergeNode in="cb"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowLc)">
+    <!-- Floating animation (offset phase) -->
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-1.5; 0,0" dur="5.2s" begin="0.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+
+    <!-- Card base -->
+    <rect x="1" y="1" width="170" height="80" rx="12" fill="url(#bgLc)" stroke="#1e293b" stroke-width="0.9"/>
+    <rect x="1" y="1" width="170" height="80" rx="12" fill="url(#glassLc)"/>
+    <!-- Top rim highlight -->
+    <rect x="1" y="1" width="170" height="0.8" rx="0.4" fill="#ffffff" opacity="0.09"/>
+    <!-- Shimmer sweep -->
+    <rect x="1" y="1" width="170" height="80" rx="12" fill="url(#shimmerLc)"/>
+
+    <!-- Left accent vertical bar -->
+    <rect x="1" y="12" width="3" height="58" rx="1.5" fill="#f59e0b">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- LeetCode icon badge -->
+    <circle cx="21" cy="22" r="7.5" fill="#f59e0b" opacity="0.95"/>
+    <text x="21" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="7.5" font-weight="900" fill="#0f172a" text-anchor="middle">LC</text>
+
+    <!-- Platform name -->
+    <text x="35" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="700" fill="#fbbf24">
+      LeetCode
+    </text>
+
+    <!-- External arrow icon -->
+    <text x="157" y="24" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#f59e0b" text-anchor="end">
+      ↗
+    </text>
+
+    <!-- User handle -->
+    <text x="14" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">
+      Mayan_Kamboj
+    </text>
+
+    <!-- Detail / link text -->
+    <text x="14" y="67" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="9.5" fill="#64748b">
+      DSA · Java · C++
+    </text>
+  </g>
+</svg>
