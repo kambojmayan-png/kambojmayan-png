@@ -1,101 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 220" width="740" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 210" width="740" height="210">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111620"/>
-      <stop offset="100%" stop-color="#0a0d13"/>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1218"/>
+      <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
 
-    <!-- Bar Track -->
+    <!-- Glass card -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
+
+    <!-- Bar track -->
     <linearGradient id="track" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1e2530"/>
-      <stop offset="100%" stop-color="#161c24"/>
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#1a2535"/>
     </linearGradient>
 
-    <!-- Individual Bar Gradients -->
-    <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#60a5fa"/>
+    <!-- Bar fills — muted, clean -->
+    <linearGradient id="b1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
     </linearGradient>
-    <linearGradient id="bar2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#c084fc"/>
+    <linearGradient id="b2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
     </linearGradient>
-    <linearGradient id="bar3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10b981"/>
-      <stop offset="100%" stop-color="#34d399"/>
+    <linearGradient id="b3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
     </linearGradient>
-    <linearGradient id="bar4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#fbbf24"/>
+    <linearGradient id="b4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#d97706"/>
     </linearGradient>
 
-    <!-- Bar Tip Glow -->
-    <filter id="barGlow" x="-5%" y="-100%" width="110%" height="300%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <!-- Accent top line -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="30%" stop-color="#3b82f6" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#14b8a6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
   </defs>
 
-  <!-- Card Body -->
-  <rect width="740" height="220" rx="10" fill="url(#cardBg)" stroke="#263040" stroke-width="1"/>
+  <!-- Background -->
+  <rect width="740" height="210" fill="url(#bg)"/>
 
-  <!-- Header -->
-  <rect width="740" height="42" rx="10" fill="#141a24"/>
-  <rect y="32" width="740" height="10" fill="#141a24"/>
-  <line x1="0" y1="42" x2="740" y2="42" stroke="#263040" stroke-width="0.8"/>
+  <!-- Glass card body -->
+  <rect x="14" y="12" width="712" height="186" rx="14" fill="url(#glass)" stroke="#1e293b" stroke-width="0.9"/>
+  <rect x="14" y="12" width="712" height="0.8" rx="0.4" fill="#ffffff" opacity="0.06"/>
 
-  <!-- Title -->
-  <text x="25" y="27"
-    font-family="'Courier New', Courier, monospace"
-    font-size="12" font-weight="bold" fill="#8b949e" letter-spacing="2">
-    <tspan fill="#38bdf8">▶</tspan>  CORE COMPETENCIES &amp; ACTIVE FOCUS
+  <!-- Accent top bar -->
+  <rect x="14" y="12" width="712" height="1.8" rx="0.9" fill="url(#accent)"/>
+
+  <!-- Section label -->
+  <text x="28" y="34"
+    font-family="-apple-system, 'Segoe UI', Inter, sans-serif"
+    font-size="9" font-weight="600" fill="#475569" letter-spacing="2.5">
+    CORE COMPETENCIES · ACTIVE FOCUS
   </text>
+  <line x1="28" y1="42" x2="712" y2="42" stroke="#1e293b" stroke-width="0.7"/>
 
-  <!-- Bar 1: Agentic AI & Security -->
-  <text x="25" y="78" font-family="'Courier New', monospace" font-size="12" fill="#cdd9e5">Agentic AI &amp; Security Tools</text>
-  <rect x="290" y="66" width="360" height="9" rx="4.5" fill="url(#track)"/>
-  <rect x="290" y="66" width="0" height="9" rx="4.5" fill="url(#bar1)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;310" dur="1.4s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  <!-- Track width = 340px, starts x=300, label col 0–280 -->
+
+  <!-- Row 1: Agentic AI & Security (86%, 292px) -->
+  <text x="30" y="70" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e2e8f0">Agentic AI &amp; Security</text>
+  <rect x="300" y="59" width="340" height="8" rx="4" fill="url(#track)"/>
+  <rect x="300" y="59" width="0"   height="8" rx="4" fill="url(#b1)">
+    <animate attributeName="width" values="0;292" dur="1.2s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
   </rect>
-  <text x="664" y="75" font-family="'Courier New', monospace" font-size="11" fill="#60a5fa" opacity="0">
+  <text x="654" y="68" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="600" fill="#60a5fa" opacity="0">
     86%
-    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.4s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.3s" fill="freeze"/>
   </text>
 
-  <!-- Bar 2: Python / Backend -->
-  <text x="25" y="114" font-family="'Courier New', monospace" font-size="12" fill="#cdd9e5">Python, FastAPI &amp; CLI Tooling</text>
-  <rect x="290" y="102" width="360" height="9" rx="4.5" fill="url(#track)"/>
-  <rect x="290" y="102" width="0" height="9" rx="4.5" fill="url(#bar2)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;295" dur="1.4s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  <!-- Row 2: Python, FastAPI & Backend (82%, 279px) -->
+  <text x="30" y="104" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e2e8f0">Python, FastAPI &amp; Backend</text>
+  <rect x="300" y="93" width="340" height="8" rx="4" fill="url(#track)"/>
+  <rect x="300" y="93" width="0"   height="8" rx="4" fill="url(#b2)">
+    <animate attributeName="width" values="0;279" dur="1.2s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
   </rect>
-  <text x="664" y="111" font-family="'Courier New', monospace" font-size="11" fill="#c084fc" opacity="0">
+  <text x="654" y="102" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="600" fill="#2dd4bf" opacity="0">
     82%
-    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.65s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.55s" fill="freeze"/>
   </text>
 
-  <!-- Bar 3: Full-Stack Web -->
-  <text x="25" y="150" font-family="'Courier New', monospace" font-size="12" fill="#cdd9e5">TypeScript &amp; Next.js 16 Web</text>
-  <rect x="290" y="138" width="360" height="9" rx="4.5" fill="url(#track)"/>
-  <rect x="290" y="138" width="0" height="9" rx="4.5" fill="url(#bar3)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;280" dur="1.4s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  <!-- Row 3: TypeScript & Next.js (78%, 265px) -->
+  <text x="30" y="138" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e2e8f0">TypeScript &amp; Next.js 16</text>
+  <rect x="300" y="127" width="340" height="8" rx="4" fill="url(#track)"/>
+  <rect x="300" y="127" width="0"   height="8" rx="4" fill="url(#b3)">
+    <animate attributeName="width" values="0;265" dur="1.2s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
   </rect>
-  <text x="664" y="147" font-family="'Courier New', monospace" font-size="11" fill="#34d399" opacity="0">
+  <text x="654" y="136" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" opacity="0">
     78%
-    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.9s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.8s" fill="freeze"/>
   </text>
 
-  <!-- Bar 4: DSA & Problem Solving -->
-  <text x="25" y="186" font-family="'Courier New', monospace" font-size="12" fill="#cdd9e5">DSA &amp; LeetCode (Java · C++)</text>
-  <rect x="290" y="174" width="360" height="9" rx="4.5" fill="url(#track)"/>
-  <rect x="290" y="174" width="0" height="9" rx="4.5" fill="url(#bar4)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;260" dur="1.4s" begin="0.95s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  <!-- Row 4: DSA & LeetCode (72%, 245px) -->
+  <text x="30" y="172" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e2e8f0">DSA &amp; LeetCode  ·  Java / C++</text>
+  <rect x="300" y="161" width="340" height="8" rx="4" fill="url(#track)"/>
+  <rect x="300" y="161" width="0"   height="8" rx="4" fill="url(#b4)">
+    <animate attributeName="width" values="0;245" dur="1.2s" begin="0.95s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
   </rect>
-  <text x="664" y="183" font-family="'Courier New', monospace" font-size="11" fill="#fbbf24" opacity="0">
+  <text x="654" y="170" font-family="-apple-system, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="600" fill="#fbbf24" opacity="0">
     72%
-    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.15s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.05s" fill="freeze"/>
   </text>
 </svg>

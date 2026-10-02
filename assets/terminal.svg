@@ -1,11 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 370" width="740" height="370">
   <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1218"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
     <linearGradient id="titleBar" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1f242c"/>
-      <stop offset="100%" stop-color="#161b22"/>
+      <stop offset="0%" stop-color="#161d29"/>
+      <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
     <filter id="cursorGlow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -13,82 +21,94 @@
     </filter>
   </defs>
 
-  <!-- Window Frame with Border Glow -->
-  <rect x="1" y="1" width="738" height="368" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.2"/>
+  <!-- Background -->
+  <rect width="740" height="370" fill="url(#bg)"/>
 
-  <!-- Title Bar -->
-  <rect width="740" height="38" rx="10" fill="url(#titleBar)"/>
-  <rect y="28" width="740" height="10" fill="url(#titleBar)"/>
-  <line x1="0" y1="38" x2="740" y2="38" stroke="#30363d" stroke-width="0.8"/>
+  <!-- Terminal card frame -->
+  <rect x="1" y="1" width="738" height="368" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+  <rect x="1" y="1" width="738" height="368" rx="12" fill="url(#glass)"/>
 
-  <!-- Window Controls -->
-  <circle cx="22" cy="19" r="5.5" fill="#f43f5e"/>
-  <circle cx="42" cy="19" r="5.5" fill="#eab308"/>
-  <circle cx="62" cy="19" r="5.5" fill="#10b981"/>
+  <!-- Title bar -->
+  <rect x="1" y="1" width="738" height="38" rx="12" fill="url(#titleBar)"/>
+  <rect y="28" width="740" height="12" fill="url(#titleBar)"/>
+  <line x1="1" y1="39" x2="739" y2="39" stroke="#1e293b" stroke-width="0.8"/>
 
-  <!-- Window Title -->
+  <!-- Window dots -->
+  <circle cx="22" cy="19.5" r="5" fill="#ef4444" opacity="0.85"/>
+  <circle cx="41" cy="19.5" r="5" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="60" cy="19.5" r="5" fill="#22c55e" opacity="0.85"/>
+
+  <!-- Title text -->
   <text x="370" y="24"
-    font-family="'Courier New', Courier, monospace"
-    font-size="11.5" fill="#8b949e" text-anchor="middle">mayan@dev-station: ~/profile</text>
-
-  <!-- Command 1: whoami -->
-  <text x="24" y="66" font-family="'Courier New', Courier, monospace" font-size="13" fill="#10b981" font-weight="bold">$ </text>
-  <text x="42" y="66" font-family="'Courier New', Courier, monospace" font-size="13" fill="#e6edf3">whoami</text>
-  <text x="24" y="86" font-family="'Courier New', Courier, monospace" font-size="13" fill="#8b949e">
-    mayan kamboj <tspan fill="#58a6ff">— B.E. Computer Science · AI &amp; ML student</tspan>
+    font-family="-apple-system, 'Segoe UI', Inter, sans-serif"
+    font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">
+    mayan@portfolio — bash
   </text>
 
-  <!-- Divider -->
-  <line x1="24" y1="100" x2="716" y2="100" stroke="#21262d" stroke-width="0.6"/>
-
-  <!-- Command 2: ls projects/ -->
-  <text x="24" y="122" font-family="'Courier New', Courier, monospace" font-size="13" fill="#10b981" font-weight="bold">$ </text>
-  <text x="42" y="122" font-family="'Courier New', Courier, monospace" font-size="13" fill="#e6edf3">ls -la projects/</text>
-  <text x="24" y="142" font-family="'Courier New', Courier, monospace" font-size="12.5">
-    <tspan fill="#58a6ff">SENTINEL/</tspan><tspan fill="#6e7681"> [PyPI: sentinel-md]</tspan>
-    <tspan fill="#8b949e">  </tspan>
-    <tspan fill="#58a6ff">chaukas/</tspan><tspan fill="#6e7681"> [UPI scam drill]</tspan>
-    <tspan fill="#8b949e">  </tspan>
-    <tspan fill="#58a6ff">AEGIS/</tspan>
-    <tspan fill="#8b949e">  </tspan>
-    <tspan fill="#58a6ff">Leetcode/</tspan><tspan fill="#6e7681"> [Java/C++]</tspan>
+  <!-- Line 1: $ whoami -->
+  <text x="26" y="66" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#22c55e" font-weight="600">$</text>
+  <text x="40" y="66" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#e2e8f0">whoami</text>
+  <text x="26" y="86" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#94a3b8">
+    mayan kamboj  <tspan fill="#60a5fa">—</tspan>  <tspan fill="#93c5fd">B.E. CSE · AI &amp; ML student</tspan>
   </text>
 
-  <!-- Divider -->
-  <line x1="24" y1="156" x2="716" y2="156" stroke="#21262d" stroke-width="0.6"/>
+  <line x1="26" y1="100" x2="714" y2="100" stroke="#1e293b" stroke-width="0.7"/>
 
-  <!-- Command 3: cat now.txt -->
-  <text x="24" y="178" font-family="'Courier New', Courier, monospace" font-size="13" fill="#10b981" font-weight="bold">$ </text>
-  <text x="42" y="178" font-family="'Courier New', Courier, monospace" font-size="13" fill="#e6edf3">cat now.txt</text>
+  <!-- Line 2: $ ls projects/ -->
+  <text x="26" y="122" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#22c55e" font-weight="600">$</text>
+  <text x="40" y="122" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#e2e8f0">ls projects/</text>
 
-  <text x="24" y="198" font-family="'Courier New', Courier, monospace" font-size="12.5" fill="#8b949e">
-    status:   <tspan fill="#cdd9e5">B.E. CSE AI/ML student</tspan>
-  </text>
-  <text x="24" y="216" font-family="'Courier New', Courier, monospace" font-size="12.5" fill="#8b949e">
-    building: <tspan fill="#58a6ff">SENTINEL</tspan> <tspan fill="#6e7681">(agent security)</tspan> + <tspan fill="#58a6ff">chaukas</tspan> <tspan fill="#6e7681">(fraud prevention)</tspan>
-  </text>
-  <text x="24" y="234" font-family="'Courier New', Courier, monospace" font-size="12.5" fill="#8b949e">
-    learning: <tspan fill="#cdd9e5">DSA (LeetCode) · agentic AI defense · Next.js 16 full-stack</tspan>
-  </text>
-
-  <!-- Divider -->
-  <line x1="24" y1="248" x2="716" y2="248" stroke="#21262d" stroke-width="0.6"/>
-
-  <!-- Command 4: cat socials.json -->
-  <text x="24" y="270" font-family="'Courier New', Courier, monospace" font-size="13" fill="#10b981" font-weight="bold">$ </text>
-  <text x="42" y="270" font-family="'Courier New', Courier, monospace" font-size="13" fill="#e6edf3">cat socials.json</text>
-
-  <text x="24" y="290" font-family="'Courier New', Courier, monospace" font-size="12" fill="#79c0ff">
-    { <tspan fill="#ff7b72">"linkedin"</tspan>: <tspan fill="#a5d6ff">"linkedin.com/in/mayan-kamboj"</tspan>, <tspan fill="#ff7b72">"leetcode"</tspan>: <tspan fill="#a5d6ff">"Mayan_Kamboj"</tspan> }
-  </text>
-  <text x="24" y="308" font-family="'Courier New', Courier, monospace" font-size="12" fill="#79c0ff">
-    { <tspan fill="#ff7b72">"instagram"</tspan>: <tspan fill="#a5d6ff">"@mayan_kamboj"</tspan>, <tspan fill="#ff7b72">"github"</tspan>: <tspan fill="#a5d6ff">"kambojmayan-png"</tspan>, <tspan fill="#ff7b72">"email"</tspan>: <tspan fill="#a5d6ff">"kambojmayan@gmail.com"</tspan> }
+  <text x="26" y="142" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13">
+    <tspan fill="#60a5fa">SENTINEL/</tspan><tspan fill="#475569">  [PyPI sentinel-md]</tspan>
+    <tspan fill="#64748b">   </tspan>
+    <tspan fill="#60a5fa">chaukas/</tspan><tspan fill="#475569">  [UPI fraud drill]</tspan>
+    <tspan fill="#64748b">   </tspan>
+    <tspan fill="#60a5fa">AEGIS/</tspan>
+    <tspan fill="#64748b">   </tspan>
+    <tspan fill="#60a5fa">Leetcode/</tspan>
   </text>
 
-  <!-- Command 5: active prompt with blinking cursor -->
-  <text x="24" y="340" font-family="'Courier New', Courier, monospace" font-size="13" fill="#10b981" font-weight="bold">$ </text>
-  <text x="42" y="340" font-family="'Courier New', Courier, monospace" font-size="13" fill="#58a6ff">ready --collaborate</text>
-  <rect x="206" y="327" width="8" height="15" rx="1" fill="#10b981" filter="url(#cursorGlow)">
-    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+  <line x1="26" y1="157" x2="714" y2="157" stroke="#1e293b" stroke-width="0.7"/>
+
+  <!-- Line 3: $ cat now.txt -->
+  <text x="26" y="179" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#22c55e" font-weight="600">$</text>
+  <text x="40" y="179" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#e2e8f0">cat now.txt</text>
+
+  <text x="26" y="199" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#94a3b8">
+    status    <tspan fill="#e2e8f0">B.E. CSE AI/ML student</tspan>
+  </text>
+  <text x="26" y="218" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#94a3b8">
+    building  <tspan fill="#60a5fa">SENTINEL</tspan> <tspan fill="#475569">(AI agent security)</tspan>  +  <tspan fill="#60a5fa">chaukas</tspan> <tspan fill="#475569">(fraud prevention)</tspan>
+  </text>
+  <text x="26" y="237" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#94a3b8">
+    learning  <tspan fill="#e2e8f0">DSA · agentic AI · Next.js 16 full-stack</tspan>
+  </text>
+
+  <line x1="26" y1="251" x2="714" y2="251" stroke="#1e293b" stroke-width="0.7"/>
+
+  <!-- Line 4: $ cat socials.json -->
+  <text x="26" y="273" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#22c55e" font-weight="600">$</text>
+  <text x="40" y="273" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#e2e8f0">cat socials.json</text>
+
+  <text x="26" y="293" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="12">
+    <tspan fill="#94a3b8">{  </tspan>
+    <tspan fill="#f87171">"linkedin"</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#86efac">"linkedin.com/in/mayan-kamboj"</tspan>
+    <tspan fill="#94a3b8">,  </tspan>
+    <tspan fill="#f87171">"leetcode"</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#86efac">"Mayan_Kamboj"</tspan>
+    <tspan fill="#94a3b8">  }</tspan>
+  </text>
+  <text x="26" y="312" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="12">
+    <tspan fill="#94a3b8">{  </tspan>
+    <tspan fill="#f87171">"instagram"</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#86efac">"@mayan_kamboj"</tspan>
+    <tspan fill="#94a3b8">,  </tspan>
+    <tspan fill="#f87171">"email"</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#86efac">"kambojmayan@gmail.com"</tspan>
+    <tspan fill="#94a3b8">  }</tspan>
+  </text>
+
+  <!-- Line 5: prompt with cursor -->
+  <text x="26" y="344" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#22c55e" font-weight="600">$</text>
+  <text x="40" y="344" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="13" fill="#60a5fa">ready --collaborate</text>
+  <rect x="209" y="331" width="8" height="15" rx="1.5" fill="#22c55e" filter="url(#cursorGlow)" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.9;0.1;0.1" dur="1.1s" repeatCount="indefinite"/>
   </rect>
 </svg>

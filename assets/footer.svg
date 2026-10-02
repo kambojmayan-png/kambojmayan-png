@@ -2,31 +2,12 @@
   <defs>
     <linearGradient id="footerLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="transparent"/>
-      <stop offset="30%" stop-color="#1e293b"/>
-      <stop offset="50%" stop-color="#38bdf8"/>
-      <stop offset="70%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="transparent"/>
-    </linearGradient>
-    <linearGradient id="footerShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="transparent"/>
-      <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="75%" stop-color="#1e293b"/>
       <stop offset="100%" stop-color="transparent"/>
     </linearGradient>
   </defs>
-
-  <style>
-    .pulse-dot {
-      animation: pulseAnim 3s ease-in-out infinite;
-    }
-    @keyframes pulseAnim {
-      0%, 100% { opacity: 0.3; transform: scale(0.9); }
-      50% { opacity: 1; transform: scale(1.1); }
-    }
-  </style>
-
-  <!-- Base Line -->
-  <line x1="40" y1="12" x2="760" y2="12" stroke="url(#footerLine)" stroke-width="1.2"/>
-
-  <!-- Center Diamond Indicator -->
-  <polygon points="400,7 405,12 400,17 395,12" fill="#38bdf8" opacity="0.8" class="pulse-dot"/>
+  <line x1="50" y1="12" x2="750" y2="12" stroke="url(#footerLine)" stroke-width="1"/>
+  <circle cx="400" cy="12" r="2.5" fill="#334155"/>
 </svg>
