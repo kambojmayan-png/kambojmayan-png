@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=15&duration=3500&pause=1200&color=94a3b8&center=true&vCenter=true&width=540&height=36&lines=B.E.+CSE+·+AI+%26+Machine+Learning;building+SENTINEL+%26+chaukas;Python+·+TypeScript+·+Java+·+C%2B%2B;published+on+PyPI+as+sentinel-md;grinding+DSA+on+LeetCode" alt="Typing animation"/>
+  <img src="assets/typing.svg?v=1" alt="Mayan Kamboj — Developer Terminal Status" width="620"/>
 </div>
 
 <br/>

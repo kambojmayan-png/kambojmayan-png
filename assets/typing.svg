@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 38" width="620" height="38">
+  <defs>
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="cursorGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono {
+      font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', 'Cascadia Code', Menlo, Consolas, monospace;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  </style>
+
+  <!-- Glass container pill -->
+  <rect x="1" y="2" width="618" height="34" rx="17" fill="url(#pillBg)" stroke="#1e293b" stroke-width="0.8"/>
+
+  <!-- Static prompt symbol -->
+  <text x="24" y="24" class="mono" fill="#10b981" font-weight="700">❯</text>
+
+  <!-- ── LINE 1: B.E. CSE AI/ML student (0s - 3.6s) ── -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+      values="0; 1; 1; 0; 0"
+      keyTimes="0; 0.02; 0.18; 0.20; 1"
+      dur="18s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,4; 0,0; 0,0; 0,-4; 0,-4"
+      keyTimes="0; 0.02; 0.18; 0.20; 1"
+      dur="18s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+    <text x="44" y="24" class="mono" fill="#e2e8f0">
+      B.E. CSE · AI &amp; Machine Learning student
+    </text>
+  </g>
+
+  <!-- ── LINE 2: building SENTINEL & chaukas (3.6s - 7.2s) ── -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+      values="0; 0; 1; 1; 0; 0"
+      keyTimes="0; 0.20; 0.22; 0.38; 0.40; 1"
+      dur="18s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,4; 0,4; 0,0; 0,0; 0,-4; 0,-4"
+      keyTimes="0; 0.20; 0.22; 0.38; 0.40; 1"
+      dur="18s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+    <text x="44" y="24" class="mono" fill="#cbd5e1">
+      building <tspan fill="#60a5fa" font-weight="600">SENTINEL</tspan> (PyPI: sentinel-md) &amp; <tspan fill="#34d399" font-weight="600">chaukas</tspan>
+    </text>
+  </g>
+
+  <!-- ── LINE 3: Python · TypeScript · Java · C++ (7.2s - 10.8s) ── -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+      values="0; 0; 1; 1; 0; 0"
+      keyTimes="0; 0.40; 0.42; 0.58; 0.60; 1"
+      dur="18s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,4; 0,4; 0,0; 0,0; 0,-4; 0,-4"
+      keyTimes="0; 0.40; 0.42; 0.58; 0.60; 1"
+      dur="18s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+    <text x="44" y="24" class="mono" fill="#94a3b8">
+      stack: <tspan fill="#93c5fd">Python</tspan> · <tspan fill="#67e8f9">TypeScript</tspan> · <tspan fill="#fde047">Java</tspan> · <tspan fill="#fca5a5">C++</tspan>
+    </text>
+  </g>
+
+  <!-- ── LINE 4: solving DSA problems on LeetCode (10.8s - 14.4s) ── -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+      values="0; 0; 1; 1; 0; 0"
+      keyTimes="0; 0.60; 0.62; 0.78; 0.80; 1"
+      dur="18s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,4; 0,4; 0,0; 0,0; 0,-4; 0,-4"
+      keyTimes="0; 0.60; 0.62; 0.78; 0.80; 1"
+      dur="18s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+    <text x="44" y="24" class="mono" fill="#cbd5e1">
+      solving DSA algorithms on <tspan fill="#fbbf24" font-weight="600">LeetCode</tspan> (Java &amp; C++)
+    </text>
+  </g>
+
+  <!-- ── LINE 5: open to engineering collaboration (14.4s - 18.0s) ── -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+      values="0; 0; 1; 1; 0; 0"
+      keyTimes="0; 0.80; 0.82; 0.98; 1; 1"
+      dur="18s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,4; 0,4; 0,0; 0,0; 0,-4; 0,-4"
+      keyTimes="0; 0.80; 0.82; 0.98; 1; 1"
+      dur="18s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"/>
+    <text x="44" y="24" class="mono" fill="#cbd5e1">
+      open to <tspan fill="#10b981" font-weight="600">engineering collaboration</tspan> &amp; security tooling
+    </text>
+  </g>
+
+  <!-- Blinking cursor on right of prompt line -->
+  <rect x="585" y="12" width="7" height="14" rx="1" fill="#38bdf8" filter="url(#cursorGlow)">
+    <animate attributeName="opacity" values="1;1;0;0" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+</svg>
