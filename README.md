@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3500&pause=1200&color=848d97&center=true&vCenter=true&width=480&height=36&lines=2nd+year+CSE+%C2%B7+AI+%26+ML;building+SENTINEL+and+chaukas;Python+%C2%B7+TypeScript+%C2%B7+Java+%C2%B7+C%2B%2B;working+through+DSA+and+backend" alt="Typing"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3500&pause=1200&color=848d97&center=true&vCenter=true&width=480&height=36&lines=B.E.+CSE+AI%2FML+student;building+SENTINEL+and+chaukas;Python+%C2%B7+TypeScript+%C2%B7+Java+%C2%B7+C%2B%2B;working+through+DSA+and+backend" alt="Typing"/>
 </div>
 
 <br/>
@@ -24,7 +24,7 @@
 
 ## About
 
-I'm a second-year CSE student specialising in AI & ML. I write Python for tooling and backend work, TypeScript for web apps, and Java and C++ for algorithms. Most of what I learn, I learn by building things.
+I'm a B.E. CSE AI/ML student. I write Python for tooling and backend work, TypeScript for web apps, and Java and C++ for algorithms. Most of what I learn, I learn by building things.
 
 Right now I'm working on an AI agent security scanner, a fraud-prevention app I built at a hackathon, and grinding through LeetCode.
 
