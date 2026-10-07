@@ -350,7 +350,7 @@
     <rect x="754" y="86" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:894ms" data-date="2026-09-16" data-level="0"/>
     <rect x="768" y="86" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:912ms" data-date="2026-09-23" data-level="0"/>
     <rect x="782" y="86" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:930ms" data-date="2026-09-30" data-level="1"/>
-    <rect x="796" y="86" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:948ms" data-date="2026-10-07" data-level="0"/>
+    <rect x="796" y="86" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:948ms" data-date="2026-10-07" data-level="1"/>
     <rect x="68" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:16ms" data-date="2025-10-09" data-level="0"/>
     <rect x="82" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:34ms" data-date="2025-10-16" data-level="0"/>
     <rect x="96" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:52ms" data-date="2025-10-23" data-level="0"/>
@@ -525,7 +525,7 @@
 
     <!-- Live indicator -->
     <circle class="live-dot" cx="274" cy="171" r="3.5" fill="#39d353"/>
-    <text x="283" y="175" class="ts-label">updated 2026-10-07 08:25 UTC</text>
+    <text x="283" y="175" class="ts-label">updated 2026-10-07 16:15 UTC</text>
 
     <!-- Less → More scale -->
     <text x="692" y="175" class="legend-text" text-anchor="end">Less</text>
