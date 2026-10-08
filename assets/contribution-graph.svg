@@ -526,7 +526,7 @@
 
     <!-- Live indicator -->
     <circle class="live-dot" cx="274" cy="171" r="3.5" fill="#39d353"/>
-    <text x="283" y="175" class="ts-label">updated 2026-10-08 16:16 UTC</text>
+    <text x="283" y="175" class="ts-label">updated 2026-10-08 21:55 UTC</text>
 
     <!-- Less → More scale -->
     <text x="692" y="175" class="legend-text" text-anchor="end">Less</text>
