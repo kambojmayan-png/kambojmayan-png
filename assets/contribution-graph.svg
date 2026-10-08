@@ -403,6 +403,7 @@
     <rect x="754" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:898ms" data-date="2026-09-17" data-level="0"/>
     <rect x="768" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:916ms" data-date="2026-09-24" data-level="0"/>
     <rect x="782" y="100" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:934ms" data-date="2026-10-01" data-level="1"/>
+    <rect x="796" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:952ms" data-date="2026-10-08" data-level="0"/>
     <rect x="68" y="114" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:20ms" data-date="2025-10-10" data-level="0"/>
     <rect x="82" y="114" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:38ms" data-date="2025-10-17" data-level="0"/>
     <rect x="96" y="114" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:56ms" data-date="2025-10-24" data-level="0"/>
@@ -525,7 +526,7 @@
 
     <!-- Live indicator -->
     <circle class="live-dot" cx="274" cy="171" r="3.5" fill="#39d353"/>
-    <text x="283" y="175" class="ts-label">updated 2026-10-07 21:51 UTC</text>
+    <text x="283" y="175" class="ts-label">updated 2026-10-08 01:41 UTC</text>
 
     <!-- Less → More scale -->
     <text x="692" y="175" class="legend-text" text-anchor="end">Less</text>
