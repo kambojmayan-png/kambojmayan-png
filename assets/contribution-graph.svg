@@ -509,6 +509,7 @@
     <rect x="754" y="128" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:906ms" data-date="2026-09-19" data-level="0"/>
     <rect x="768" y="128" width="10" height="10" rx="2" fill="#39d353" class="cell cell-glow-bright" style="animation-delay:924ms" data-date="2026-09-26" data-level="4"/>
     <rect x="782" y="128" width="10" height="10" rx="2" fill="#39d353" class="cell cell-glow-bright" style="animation-delay:942ms" data-date="2026-10-03" data-level="4"/>
+    <rect x="796" y="128" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:960ms" data-date="2026-10-10" data-level="0"/>
   </g>
 
   <!-- Shimmer overlay -->
@@ -527,7 +528,7 @@
 
     <!-- Live indicator -->
     <circle class="live-dot" cx="274" cy="171" r="3.5" fill="#39d353"/>
-    <text x="283" y="175" class="ts-label">updated 2026-10-09 21:31 UTC</text>
+    <text x="283" y="175" class="ts-label">updated 2026-10-10 01:35 UTC</text>
 
     <!-- Less → More scale -->
     <text x="692" y="175" class="legend-text" text-anchor="end">Less</text>
