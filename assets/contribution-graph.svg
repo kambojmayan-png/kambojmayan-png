@@ -184,10 +184,10 @@
     <rect x="642" y="44" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:738ms" data-date="2026-08-23" data-level="1"/>
     <rect x="656" y="44" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:756ms" data-date="2026-08-30" data-level="0"/>
     <rect x="670" y="44" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:774ms" data-date="2026-09-06" data-level="0"/>
-    <rect x="684" y="44" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:792ms" data-date="2026-09-13" data-level="2"/>
+    <rect x="684" y="44" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:792ms" data-date="2026-09-13" data-level="1"/>
     <rect x="698" y="44" width="10" height="10" rx="2" fill="#39d353" class="cell cell-glow-bright" style="animation-delay:810ms" data-date="2026-09-20" data-level="4"/>
     <rect x="712" y="44" width="10" height="10" rx="2" fill="#26a641" class="cell cell-glow-bright" style="animation-delay:828ms" data-date="2026-09-27" data-level="3"/>
-    <rect x="726" y="44" width="10" height="10" rx="2" fill="#26a641" class="cell cell-glow-bright" style="animation-delay:846ms" data-date="2026-10-04" data-level="3"/>
+    <rect x="726" y="44" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:846ms" data-date="2026-10-04" data-level="2"/>
     <rect x="740" y="44" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:864ms" data-date="2026-10-11" data-level="2"/>
     <rect x="754" y="44" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:882ms" data-date="2026-10-18" data-level="2"/>
     <rect x="768" y="44" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:900ms" data-date="2026-10-25" data-level="2"/>
@@ -298,7 +298,7 @@
     <rect x="754" y="72" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:890ms" data-date="2026-10-20" data-level="1"/>
     <rect x="768" y="72" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:908ms" data-date="2026-10-27" data-level="2"/>
     <rect x="782" y="72" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:926ms" data-date="2026-11-03" data-level="1"/>
-    <rect x="796" y="72" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:944ms" data-date="2026-11-10" data-level="0"/>
+    <rect x="796" y="72" width="10" height="10" rx="2" fill="#39d353" class="cell cell-glow-bright" style="animation-delay:944ms" data-date="2026-11-10" data-level="4"/>
     <rect x="68" y="86" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:12ms" data-date="2025-11-12" data-level="0"/>
     <rect x="82" y="86" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:30ms" data-date="2025-11-19" data-level="0"/>
     <rect x="96" y="86" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:48ms" data-date="2025-11-26" data-level="0"/>
@@ -398,10 +398,10 @@
     <rect x="684" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:808ms" data-date="2026-09-17" data-level="0"/>
     <rect x="698" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:826ms" data-date="2026-09-24" data-level="0"/>
     <rect x="712" y="100" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:844ms" data-date="2026-10-01" data-level="1"/>
-    <rect x="726" y="100" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:862ms" data-date="2026-10-08" data-level="2"/>
+    <rect x="726" y="100" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:862ms" data-date="2026-10-08" data-level="1"/>
     <rect x="740" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:880ms" data-date="2026-10-15" data-level="0"/>
     <rect x="754" y="100" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:898ms" data-date="2026-10-22" data-level="0"/>
-    <rect x="768" y="100" width="10" height="10" rx="2" fill="#26a641" class="cell cell-glow-bright" style="animation-delay:916ms" data-date="2026-10-29" data-level="3"/>
+    <rect x="768" y="100" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:916ms" data-date="2026-10-29" data-level="2"/>
     <rect x="782" y="100" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:934ms" data-date="2026-11-05" data-level="1"/>
     <rect x="68" y="114" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:20ms" data-date="2025-11-14" data-level="0"/>
     <rect x="82" y="114" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:38ms" data-date="2025-11-21" data-level="0"/>
@@ -449,7 +449,7 @@
     <rect x="670" y="114" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:794ms" data-date="2026-09-11" data-level="1"/>
     <rect x="684" y="114" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:812ms" data-date="2026-09-18" data-level="1"/>
     <rect x="698" y="114" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:830ms" data-date="2026-09-25" data-level="1"/>
-    <rect x="712" y="114" width="10" height="10" rx="2" fill="#26a641" class="cell cell-glow-bright" style="animation-delay:848ms" data-date="2026-10-02" data-level="3"/>
+    <rect x="712" y="114" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:848ms" data-date="2026-10-02" data-level="2"/>
     <rect x="726" y="114" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:866ms" data-date="2026-10-09" data-level="2"/>
     <rect x="740" y="114" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:884ms" data-date="2026-10-16" data-level="1"/>
     <rect x="754" y="114" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:902ms" data-date="2026-10-23" data-level="0"/>
@@ -495,7 +495,7 @@
     <rect x="586" y="128" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:690ms" data-date="2026-08-01" data-level="0"/>
     <rect x="600" y="128" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:708ms" data-date="2026-08-08" data-level="0"/>
     <rect x="614" y="128" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:726ms" data-date="2026-08-15" data-level="2"/>
-    <rect x="628" y="128" width="10" height="10" rx="2" fill="#006d32" class="cell cell-glow-dim" style="animation-delay:744ms" data-date="2026-08-22" data-level="2"/>
+    <rect x="628" y="128" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:744ms" data-date="2026-08-22" data-level="1"/>
     <rect x="642" y="128" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:762ms" data-date="2026-08-29" data-level="0"/>
     <rect x="656" y="128" width="10" height="10" rx="2" fill="#161b22" class="cell" style="animation-delay:780ms" data-date="2026-09-05" data-level="0"/>
     <rect x="670" y="128" width="10" height="10" rx="2" fill="#0e4429" class="cell cell-glow-dim" style="animation-delay:798ms" data-date="2026-09-12" data-level="1"/>
@@ -525,7 +525,7 @@
 
     <!-- Live indicator -->
     <circle class="live-dot" cx="274" cy="171" r="3.5" fill="#39d353"/>
-    <text x="283" y="175" class="ts-label">updated 2026-11-10 03:20 UTC</text>
+    <text x="283" y="175" class="ts-label">updated 2026-11-10 12:22 UTC</text>
 
     <!-- Less → More scale -->
     <text x="692" y="175" class="legend-text" text-anchor="end">Less</text>
